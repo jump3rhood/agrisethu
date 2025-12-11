@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story - Agrisethu</title>
+    <meta name="description"
+        content="The story of how we're bridging India's agricultural gap—one farm, one farmer, one harvest at a time.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800&family=Crimson+Text:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(0, 122, 63, 0.9) 0%, rgba(122, 47, 0, 0.8) 50%, rgba(139, 69, 19, 0.7) 100%);
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg, #007a3f 0%, #7a2f00 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .parallax-bg {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .typed-cursor {
+            color: #007a3f;
+        }
+
+        .stats-counter {
+            font-variant-numeric: tabular-nums;
+        }
+
+        .btn-shimmer {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-shimmer::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transform: skewX(-20deg);
+            transition: none;
+        }
+
+        .btn-shimmer:hover::after {
+            left: 200%;
+            transition: left 0.7s ease-in-out;
+        }
+    </style>
+</head>
+
+<body class="font-sans text-gray-800 bg-light-yellow">
+
+    <!-- Navigation -->
+    <nav class="bg-white/95 backdrop-blur-sm shadow-sm fixed w-full z-50 transition-all duration-300 navbar-visible">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center cursor-pointer">
+                    <a href="/index.html">
+                        <img class="h-20 w-auto md:h-24 transition-all duration-300 hover:scale-105"
+                            src="/assets/images/logo.png" alt="Agrisethu Logo">
+                    </a>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/index.html"
+                        class="text-gray-600 font-medium hover:text-primary transition-colors duration-300">Home</a>
+                    <a href="/pages/story.html" class="text-primary font-bold transition-colors duration-300">Our
+                        Story</a>
+                    <!-- Dropdown -->
+                    <div class="relative group h-20 flex items-center">
+                        <button
+                            class="text-gray-600 group-hover:text-primary font-medium flex items-center transition-colors duration-300 outline-none">
+                            Services
+                            <svg class="ml-1 h-4 w-4 fill-current transition-transform duration-300 group-hover:rotate-180"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                <path
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" />
+                            </svg>
+                        </button>
+                        <div
+                            class="absolute left-0 top-full mt-0 w-56 bg-white rounded-b-xl shadow-xl py-2 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 transform origin-top-left border-t-2 border-primary">
+                            <a href="/index.html#services"
+                                class="block px-6 py-3 text-sm text-gray-600 hover:bg-light-yellow hover:text-primary transition-colors">For
+                                Landowners</a>
+                            <a href="/index.html#services"
+                                class="block px-6 py-3 text-sm text-gray-600 hover:bg-light-yellow hover:text-primary transition-colors">For
+                                Farmers</a>
+                            <a href="/index.html#services"
+                                class="block px-6 py-3 text-sm text-gray-600 hover:bg-light-yellow hover:text-primary transition-colors">Animal
+                                Husbandry</a>
+                            <a href="/pages/exports.html"
+                                class="block px-6 py-3 text-sm text-gray-600 hover:bg-light-yellow hover:text-primary transition-colors">Global
+                                Exports</a>
+                        </div>
+                    </div>
+                    <a href="/pages/contact.html#contact-form"
+                        class="btn-shimmer px-6 py-2.5 rounded-lg bg-primary text-white font-bold hover:bg-dark-brown transition-all duration-300 shadow-md hover:shadow-lg">Contact</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="flex items-center md:hidden">
+                    <button type="button"
+                        class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-primary hover:bg-light-yellow focus:outline-none transition-colors">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div
+            class="mobile-menu hidden md:hidden bg-white border-t border-gray-100 absolute top-full left-0 w-full shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="/index.html"
+                    class="block px-4 py-3 rounded-lg text-base font-medium text-gray-600 hover:text-primary hover:bg-gray-50">Home</a>
+                <a href="/pages/story.html"
+                    class="block px-4 py-3 rounded-lg text-base font-bold text-primary bg-light-yellow">Our Story</a>
+                <div class="px-4 py-2">
+                    <div class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-2">Services</div>
+                    <div class="pl-4 space-y-2 border-l-2 border-gray-100">
+                        <a href="/index.html#services"
+                            class="block text-sm font-medium text-gray-600 hover:text-primary">For Landowners</a>
+                        <a href="/index.html#services"
+                            class="block text-sm font-medium text-gray-600 hover:text-primary">For Farmers</a>
+                        <a href="/index.html#services"
+                            class="block text-sm font-medium text-gray-600 hover:text-primary">Animal Husbandry</a>
+                        <a href="/pages/exports.html"
+                            class="block text-sm font-medium text-gray-600 hover:text-primary">Global Exports</a>
+                    </div>
+                </div>
+                <a href="/pages/contact.html#contact-form"
+                    class="block w-full text-center px-4 py-3 mt-4 rounded-lg font-bold text-white bg-primary hover:bg-secondary shadow-md">Contact
+                    Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=1600&h=900&fit=crop&q=80"
+                alt="Golden agricultural fields" class="w-full h-full object-cover">
+            <div class="hero-gradient absolute inset-0"></div>
+        </div>
+
+        <div class="relative z-10 text-center text-white max-w-5xl mx-auto px-4">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+                <span id="typed-text"></span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto leading-relaxed">
+                Bridging India's agricultural gap—connecting land, farmers, and global markets through sustainable
+                organic farming.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#story"
+                    class="btn-shimmer bg-white text-primary px-8 py-4 rounded-full font-semibold hover:bg-light-yellow transition-colors duration-300">
+                    Discover Our Story
+                </a>
+                <a href="#impact"
+                    class="btn-shimmer border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-primary transition-colors duration-300">
+                    See Our Impact
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3">
+                </path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- The Gap Section -->
+    <section id="story" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl md:text-5xl font-bold text-gradient mb-6">
+                    The Gap We Saw
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    A few years ago, we noticed something that didn't add up. Skilled farmers struggled despite their
+                    expertise, while fertile land sat idle.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+                <div class="reveal">
+                    <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=800&h=600&fit=crop&q=80"
+                        alt="Agricultural landscape" class="w-full h-96 object-cover rounded-2xl shadow-lg">
+                </div>
+                <div class="reveal">
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div
+                                class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-primary font-bold text-sm">1</span>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900 mb-2">Skilled Farmers, No Stability</h3>
+                                <p class="text-gray-600">Years of experience but seasonal work and uncertain income.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div
+                                class="w-8 h-8 bg-tertiary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-tertiary font-bold text-sm">2</span>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900 mb-2">Fertile Land, Sitting Idle</h3>
+                                <p class="text-gray-600">Landowners too busy to farm, lacking resources and expertise.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div
+                                class="w-8 h-8 bg-fourth/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-fourth font-bold text-sm">3</span>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900 mb-2">Market Demand, Supply Issues</h3>
+                                <p class="text-gray-600">Growing demand for organic food but inconsistent, unreliable
+                                    supply.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="bg-gradient-to-r from-primary/10 via-tertiary/10 to-fourth/10 rounded-2xl p-8 md:p-12 text-center reveal">
+                <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                    A Bridge Was Needed
+                </h3>
+                <p class="text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed">
+                    So we built it. We created Agrisethu—an ecosystem connecting <strong class="text-primary">Land →
+                        Farmers → Technology → Markets</strong> under one unified system. To create sustainable,
+                    profitable, organic farming that brings dignity, safety, and stability to everyone.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Three Pillars Section -->
+    <section class="py-20 bg-light-yellow">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl md:text-5xl font-bold text-gradient mb-6">
+                    Three Pillars That Changed Everything
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Our approach rests on three fundamental principles that transformed Indian agriculture.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover reveal">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.414-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">The Right Land</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Every land must pass our Eligibility Test—soil testing, water quality checks, legal
+                        verification. If it can't grow sustainably, we don't touch it.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover reveal">
+                    <div class="w-16 h-16 bg-tertiary rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Farmers as Employees</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Our farmers receive training, stable income, insurance, and respect. Farming became a career,
+                        not just survival.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover reveal">
+                    <div class="w-16 h-16 bg-fourth rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Data-Driven Decisions</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        AI prediction software analyzes market trends, weather, and demand. We know which crop will be
+                        needed 3 months ahead.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Farm Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="reveal">
+                    <h2 class="text-3xl md:text-5xl font-bold text-gradient mb-6">
+                        Zero-Chemical, Fully-Traceable
+                    </h2>
+                    <p class="text-xl text-gray-600 mb-8">
+                        Our precise farming cycle ensures premium quality at every step.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+                                <span class="text-white font-bold">1</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Soil Testing & Organic Setup</h4>
+                                <p class="text-gray-600">Comprehensive analysis and organic preparation</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-10 h-10 bg-tertiary rounded-full flex items-center justify-center">
+                                <span class="text-white font-bold">2</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">AI Crop Selection & Deployment</h4>
+                                <p class="text-gray-600">Data-driven decisions for optimal yields</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-10 h-10 bg-fourth rounded-full flex items-center justify-center">
+                                <span class="text-white font-bold">3</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Continuous Monitoring</h4>
+                                <p class="text-gray-600">Real-time tracking and quality control</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-10 h-10 bg-secondary rounded-full flex items-center justify-center">
+                                <span class="text-white font-bold">4</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Quality Testing & Export</h4>
+                                <p class="text-gray-600">Premium products for global markets</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reveal">
+                    <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&h=600&fit=crop&q=80"
+                        alt="Organic farming process" class="w-full h-96 object-cover rounded-2xl shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="py-20 bg-light-yellow">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl md:text-5xl font-bold text-gradient mb-6">
+                    Everyone Wins
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    In just 2 years of operations, we've created measurable impact across the agricultural ecosystem.
+                </p>
+            </div>
+
+            <!-- Stats Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
+                <div class="text-center bg-white rounded-2xl p-6 shadow-lg card-hover reveal">
+                    <div class="text-4xl md:text-5xl font-bold text-primary mb-2 stats-counter" data-target="500">0
+                    </div>
+                    <div class="text-gray-600 font-medium">Tons Exported</div>
+                </div>
+                <div class="text-center bg-white rounded-2xl p-6 shadow-lg card-hover reveal">
+                    <div class="text-4xl md:text-5xl font-bold text-tertiary mb-2 stats-counter" data-target="4">0</div>
+                    <div class="text-gray-600 font-medium">Continents Reached</div>
+                </div>
+                <div class="text-center bg-white rounded-2xl p-6 shadow-lg card-hover reveal">
+                    <div class="text-4xl md:text-5xl font-bold text-fourth mb-2 stats-counter" data-target="25">0</div>
+                    <div class="text-gray-600 font-medium">International Buyers</div>
+                </div>
+                <div class="text-center bg-white rounded-2xl p-6 shadow-lg card-hover reveal">
+                    <div class="text-4xl md:text-5xl font-bold text-secondary mb-2">100%</div>
+                    <div class="text-gray-600 font-medium">Organic</div>
+                </div>
+            </div>
+
+            <!-- Impact Benefits -->
+            <div class="bg-white rounded-2xl p-8 md:p-12 reveal">
+                <h3 class="text-2xl font-bold text-gray-900 text-center mb-8">Today, the results speak:</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <div
+                                class="w-6 h-6 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <p class="text-gray-700">Landowners earn from land that was gathering dust</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div
+                                class="w-6 h-6 bg-tertiary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <p class="text-gray-700">Farmers get stable jobs, respect, and a real future</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div
+                                class="w-6 h-6 bg-fourth rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <p class="text-gray-700">Agrisethu grows premium organic crops profitably</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <div
+                                class="w-6 h-6 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <p class="text-gray-700">Buyers receive reliable, high-quality products</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div
+                                class="w-6 h-6 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <p class="text-gray-700">Export partners get consistent supply</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div
+                                class="w-6 h-6 bg-tertiary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <p class="text-gray-700">The environment heals from chemical-free farming</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-8">
+                    <p class="text-2xl font-bold text-gray-900">Everyone wins. No one is left behind.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section id="values" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl md:text-5xl font-bold text-gradient mb-6">
+                    Our Values
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    The principles that guide every decision we make and every action we take.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-light-yellow rounded-2xl p-8 card-hover reveal">
+                    <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Sustainability</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Farming that works today without stealing from tomorrow. Soil regeneration, water conservation,
+                        zero chemicals.
+                    </p>
+                </div>
+
+                <div class="bg-light-yellow rounded-2xl p-8 card-hover reveal">
+                    <div class="w-12 h-12 bg-tertiary rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Dignity</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Every farmer deserves stable work and respect. Not as charity, but as a basic right.
+                    </p>
+                </div>
+
+                <div class="bg-light-yellow rounded-2xl p-8 card-hover reveal">
+                    <div class="w-12 h-12 bg-fourth rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Profitability</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Doing good shouldn't mean losing money. Sustainable farming can be profitable for everyone.
+                    </p>
+                </div>
+
+                <div class="bg-light-yellow rounded-2xl p-8 card-hover reveal">
+                    <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Innovation</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        We blend age-old farming wisdom with cutting-edge technology to maximize results.
+                    </p>
+                </div>
+
+                <div class="bg-light-yellow rounded-2xl p-8 card-hover reveal">
+                    <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Transparency</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        From soil testing to export documentation, everything is done in the open. Clear agreements,
+                        honest communication.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-br from-primary via-tertiary to-fourth relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-10 left-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+            <div class="absolute bottom-10 right-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="relative z-10 max-w-5xl mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-5xl font-bold text-white mb-8">
+                We're Building a Movement
+            </h2>
+            <p class="text-xl text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed">
+                We're not just changing fields. We're changing lives. We're changing the future of agriculture—proving
+                that Indian agriculture can be sustainable, profitable, and dignified.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <a href="/pages/contact.html#contact-form"
+                    class="btn-shimmer bg-white text-primary px-6 py-4 rounded-full font-semibold hover:bg-light-yellow transition-colors duration-300">
+                    Lease Your Land
+                </a>
+                <a href="/pages/contact.html#contact-form"
+                    class="btn-shimmer bg-white text-tertiary px-6 py-4 rounded-full font-semibold hover:bg-light-yellow transition-colors duration-300">
+                    Join Our Team
+                </a>
+                <a href="/pages/exports.html"
+                    class="btn-shimmer bg-white text-fourth px-6 py-4 rounded-full font-semibold hover:bg-light-yellow transition-colors duration-300">
+                    Partner With Us
+                </a>
+                <a href="#impact"
+                    class="btn-shimmer bg-white text-secondary px-6 py-4 rounded-full font-semibold hover:bg-light-yellow transition-colors duration-300">
+                    Discover Impact
+                </a>
+            </div>
+
+            <div class="mt-12">
+                <p class="text-3xl font-bold text-white">
+                    That's the Agrisethu promise. That's our story. And we're just getting started.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300">
+        <div class="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <!-- Column 1: About -->
+                <div>
+                    <div class="flex items-center text-white font-bold text-2xl mb-4">
+                        <span class="text-primary">Agri</span>sethu
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Bridging the gap between Indian farmers and global markets through technology, sustainable
+                        practices, and fair partnerships.
+                    </p>
+                    <!-- Social Links -->
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">
+                            <span class="sr-only">Facebook</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">
+                            <span class="sr-only">Twitter</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">
+                            <span class="sr-only">LinkedIn</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div>
+                    <h3 class="text-white text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="/index.html" class="hover:text-primary transition-colors duration-300">Home</a>
+                        </li>
+                        <li><a href="/pages/story.html" class="hover:text-primary transition-colors duration-300">Our
+                                Story</a></li>
+                        <li><a href="/index.html#services" class="hover:text-primary transition-colors duration-300">For
+                                Landowners</a></li>
+                        <li><a href="/pages/contact.html#contact-form"
+                                class="hover:text-primary transition-colors duration-300">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Services -->
+                <div>
+                    <h3 class="text-white text-xl font-bold mb-4">Services</h3>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="/pages/exports.html"
+                                class="hover:text-primary transition-colors duration-300">Global Exports</a>
+                        </li>
+                        <li><a href="/index.html#services"
+                                class="hover:text-primary transition-colors duration-300">Crop Advisory</a></li>
+                        <li><a href="/index.html#services"
+                                class="hover:text-primary transition-colors duration-300">Insurance
+                                Assistance</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact Information -->
+                <div>
+                    <h3 class="text-white text-xl font-bold mb-4">Get In Touch</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-primary mt-1 flex-shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                </path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <div>
+                                <p class="text-gray-400">Agrisethu Office Address</p>
+                                <p class="text-gray-400">City, State, PIN Code</p>
+                                <p class="text-gray-400">India</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-primary flex-shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                                </path>
+                            </svg>
+                            <p class="text-gray-400">+91 XXX XXX XXXX</p>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-primary flex-shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                            <p class="text-gray-400">info@agrisethu.com</p>
+                        </div>
+
+                        <div class="pt-2 border-t border-gray-800">
+                            <p class="text-sm font-bold text-white mb-2">Business Hours</p>
+                            <p class="text-sm text-gray-400">Mon - Sat: 9:00 AM - 6:00 PM</p>
+                            <p class="text-sm text-gray-400">Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="pt-8 border-t border-gray-800">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-gray-400 text-sm text-center md:text-left">
+                        © 2024 Agrisethu Private Limited. All rights reserved.
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-6 text-sm">
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">Privacy
+                            Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">Terms &
+                            Conditions</a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">Cookie
+                            Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">Refund
+                            Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+    <script>
+        // Typed.js for hero text
+        document.addEventListener('DOMContentLoaded', function () {
+            new Typed('#typed-text', {
+                strings: [
+                    'Every Great Change Starts with a Simple Observation',
+                    'Transforming Indian Agriculture, One Farm at a Time',
+                    'Bridging the Gap Between Land and Opportunity'
+                ],
+                typeSpeed: 50,
+                backSpeed: 30,
+                backDelay: 2000,
+                loop: true,
+                cursorChar: '|'
+            });
+
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Reveal animations on scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.reveal').forEach(el => {
+                observer.observe(el);
+            });
+
+            // Counter animation
+            const counters = document.querySelectorAll('.stats-counter');
+            const counterObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const counter = entry.target;
+                        const target = parseInt(counter.getAttribute('data-target'));
+                        let current = 0;
+                        const increment = target / 50;
+
+                        const updateCounter = () => {
+                            if (current < target) {
+                                current += increment;
+                                counter.textContent = Math.floor(current) + (target === 500 ? '+' : target === 4 ? '' : '+');
+                                requestAnimationFrame(updateCounter);
+                            } else {
+                                counter.textContent = target + (target === 500 ? '+' : target === 4 ? '' : '+');
+                            }
+                        };
+
+                        updateCounter();
+                        counterObserver.unobserve(counter);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            counters.forEach(counter => {
+                counterObserver.observe(counter);
+            });
+        });
+    </script>
+</body>
+
+</html>

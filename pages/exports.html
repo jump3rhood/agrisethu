@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Exports - Agrisethu</title>
+    <meta name="description"
+        content="Export premium Indian organic produce globally. 100% organic, fully traceable, and certified for international markets.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;500;700&display=swap"
+        rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="font-sans text-gray-800 bg-light-yellow">
+    <!-- Navbar -->
+    <nav class="bg-white/95 backdrop-blur-sm shadow-sm fixed w-full z-50 transition-all duration-300 navbar-visible">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center cursor-pointer">
+                    <a href="/index.html">
+                        <img class="h-20 w-auto md:h-24 transition-all duration-300 hover:scale-105"
+                            src="/assets/images/logo.png" alt="Agrisethu Logo">
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/index.html"
+                        class="text-gray-600 font-medium hover:text-primary transition-colors duration-300">Home</a>
+                    <a href="/pages/story.html"
+                        class="text-gray-600 font-medium hover:text-primary transition-colors duration-300">Our
+                        Story</a>
+                    <div class="relative group h-20 flex items-center">
+                        <button
+                            class="text-gray-600 group-hover:text-primary font-medium flex items-center transition-colors duration-300 outline-none">
+                            Services
+                            <svg class="ml-1 h-4 w-4 fill-current transition-transform duration-300 group-hover:rotate-180"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                <path
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" />
+                            </svg>
+                        </button>
+                        <div
+                            class="absolute left-0 top-full mt-0 w-56 bg-white rounded-b-xl shadow-xl py-2 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 transform origin-top-left border-t-2 border-primary">
+                            <a href="/index.html#services"
+                                class="block px-6 py-3 text-sm text-gray-600 hover:bg-light-yellow hover:text-primary transition-colors">For
+                                Landowners</a>
+                            <a href="/index.html#services"
+                                class="block px-6 py-3 text-sm text-gray-600 hover:bg-light-yellow hover:text-primary transition-colors">For
+                                Farmers</a>
+                            <a href="/index.html#services"
+                                class="block px-6 py-3 text-sm text-gray-600 hover:bg-light-yellow hover:text-primary transition-colors">Animal
+                                Husbandry</a>
+                            <a href="/pages/exports.html"
+                                class="block px-6 py-3 text-sm text-primary font-bold bg-light-yellow">Global
+                                Exports</a>
+                        </div>
+                    </div>
+                    <a href="/pages/contact.html#contact-form"
+                        class="btn-shimmer px-6 py-2.5 rounded-lg bg-primary text-white font-bold hover:bg-dark-brown transition-all duration-300 shadow-md hover:shadow-lg">Contact</a>
+                </div>
+                <div class="flex items-center md:hidden">
+                    <button type="button"
+                        class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-primary hover:bg-light-yellow focus:outline-none transition-colors">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div
+            class="mobile-menu hidden md:hidden bg-white border-t border-gray-100 absolute top-full left-0 w-full shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="/index.html"
+                    class="block px-4 py-3 rounded-lg text-base font-medium text-gray-600 hover:text-primary hover:bg-gray-50">Home</a>
+                <a href="/pages/story.html"
+                    class="block px-4 py-3 rounded-lg text-base font-medium text-gray-600 hover:text-primary hover:bg-gray-50">Our
+                    Story</a>
+                <div class="px-4 py-2">
+                    <div class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-2">Services</div>
+                    <div class="pl-4 space-y-2 border-l-2 border-gray-100">
+                        <a href="/index.html#services"
+                            class="block text-sm font-medium text-gray-600 hover:text-primary">For Landowners</a>
+                        <a href="/index.html#services"
+                            class="block text-sm font-medium text-gray-600 hover:text-primary">For Farmers</a>
+                        <a href="/index.html#services"
+                            class="block text-sm font-medium text-gray-600 hover:text-primary">Animal Husbandry</a>
+                        <a href="/pages/exports.html"
+                            class="block text-sm font-bold text-primary bg-light-yellow px-2 py-1 rounded">Global
+                            Exports</a>
+                    </div>
+                </div>
+                <a href="/pages/contact.html"
+                    class="block w-full text-center px-4 py-3 mt-4 rounded-lg font-bold text-white bg-primary hover:bg-secondary shadow-md">Contact
+                    Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECTION 1: HERO -->
+    <section class="relative min-h-[70vh] flex items-center justify-center overflow-hidden pt-20 reveal">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?w=1600&h=900&fit=crop&q=80"
+                alt="Global Exports" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-br from-primary/90 via-black/50 to-tertiary/80"></div>
+        </div>
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 py-20">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+                Taking India's Organic Excellence to Global Markets
+            </h1>
+            <p class="text-lg sm:text-xl md:text-2xl text-white/90 max-w-3xl mx-auto mb-10 leading-relaxed">
+                From farm to international shores—100% organic produce with complete traceability and unwavering quality
+                standards.
+            </p>
+            <a href="#get-started"
+                class="btn-shimmer inline-block px-8 py-4 rounded-lg bg-fourth text-white font-bold hover:bg-black hover:text-white transition-all duration-300 shadow-xl hover:shadow-2xl text-lg">
+                Become an Export Partner
+            </a>
+        </div>
+    </section>
+
+    <!-- SECTION 2: WHY EXPORT WITH AGRISETHU -->
+    <section class="py-20 bg-light-brown reveal">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    Your Gateway to Premium Indian Organic Produce
+                </h2>
+                <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
+                    We bridge the gap between India's organic farms and discerning international buyers who demand
+                    quality, consistency, and integrity.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div
+                    class="bg-white rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">100% Organic Guarantee</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Every product is grown without chemicals, pesticides, or synthetic fertilizers. What we promise
+                        is what you receive.
+                    </p>
+                </div>
+
+                <div
+                    class="bg-white rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Complete Traceability</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        From seed to shipment, we track every step. You know exactly where your produce comes from and
+                        how it was grown.
+                    </p>
+                </div>
+
+                <div
+                    class="bg-white rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-tertiary rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Consistent Supply</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Our network of managed farms ensures reliable, year-round availability. No surprises, no
+                        shortages.
+                    </p>
+                </div>
+
+                <div
+                    class="bg-white rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Documentation Handled</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Export paperwork, compliance, and certifications—we manage it all so you can focus on your
+                        business.
+                    </p>
+                </div>
+
+                <div
+                    class="bg-gradient-to-br from-secondary/5 to-secondary/10 rounded-2xl p-8 border border-secondary/20 hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Direct from Source</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        No middlemen. You work directly with the people who grow your produce, ensuring better prices
+                        and accountability.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: WHAT WE EXPORT -->
+    <section class="py-20 bg-light-yellow reveal">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    Premium Organic Products Across Categories
+                </h2>
+                <p class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
+                    Carefully cultivated, rigorously tested, and ready for global markets.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="mb-6">
+                        <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400&h=300&fit=crop&q=80"
+                            alt="Organic Grains" class="w-full h-48 object-cover rounded-lg mb-4">
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Organic Grains</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-primary mr-2">•</span>
+                            Millets (Foxtail, Pearl, Finger)
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-primary mr-2">•</span>
+                            Rice varieties
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-primary mr-2">•</span>
+                            Wheat and ancient grains
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-primary mr-2">•</span>
+                            Pulses and lentils
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="mb-6">
+                        <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=400&h=300&fit=crop&q=80"
+                            alt="Fresh Fruits" class="w-full h-48 object-cover rounded-lg mb-4">
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Fresh Fruits</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-secondary mr-2">•</span>
+                            Seasonal tropical fruits
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-secondary mr-2">•</span>
+                            Berries and citrus
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-secondary mr-2">•</span>
+                            Mangoes and pomegranates
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-secondary mr-2">•</span>
+                            Export-grade bananas
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="mb-6">
+                        <img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?w=400&h=300&fit=crop&q=80"
+                            alt="Medicinal Plants" class="w-full h-48 object-cover rounded-lg mb-4">
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Medicinal Plants & Herbs</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-tertiary mr-2">•</span>
+                            Ayurvedic herbs
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-tertiary mr-2">•</span>
+                            Turmeric and ginger
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-tertiary mr-2">•</span>
+                            Moringa and ashwagandha
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-tertiary mr-2">•</span>
+                            Traditional medicinal roots
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="mb-6">
+                        <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=400&h=300&fit=crop&q=80"
+                            alt="Vegetables" class="w-full h-48 object-cover rounded-lg mb-4">
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Vegetables</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-primary mr-2">•</span>
+                            Organic leafy greens
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-primary mr-2">•</span>
+                            Root vegetables
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-primary mr-2">•</span>
+                            Specialty vegetables
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-primary mr-2">•</span>
+                            International cuisine varieties
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <p class="text-gray-600 italic">
+                    <strong>Note:</strong> Product availability varies by season. Contact us for current catalog and
+                    harvest schedules.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: EXPORT DESTINATIONS -->
+    <section class="py-20 bg-white reveal">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    Reaching Markets Across Continents
+                </h2>
+                <p class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
+                    In just 2 years, we've established partnerships across four major regions.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                <div class="text-center">
+                    <div
+                        class="w-24 h-24 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl font-bold text-white">UAE</span>
+                    </div>
+                    <h4 class="font-bold text-gray-900">United Arab Emirates</h4>
+                </div>
+
+                <div class="text-center">
+                    <div
+                        class="w-24 h-24 bg-gradient-to-br from-secondary to-tertiary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl font-bold text-white">EU</span>
+                    </div>
+                    <h4 class="font-bold text-gray-900">European Union</h4>
+                </div>
+
+                <div class="text-center">
+                    <div
+                        class="w-24 h-24 bg-gradient-to-br from-tertiary to-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl font-bold text-white">USA</span>
+                    </div>
+                    <h4 class="font-bold text-gray-900">United States</h4>
+                </div>
+
+                <div class="text-center">
+                    <div
+                        class="w-24 h-24 bg-gradient-to-br from-primary to-tertiary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl font-bold text-white">SEA</span>
+                    </div>
+                    <h4 class="font-bold text-gray-900">Southeast Asia</h4>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+                <div class="text-center p-6 bg-gradient-to-br from-primary/5 to-primary/10 rounded-2xl">
+                    <div class="text-4xl md:text-5xl font-bold text-primary mb-2">2</div>
+                    <div class="text-gray-700 font-medium">Years in Export</div>
+                </div>
+
+                <div class="text-center p-6 bg-gradient-to-br from-secondary/5 to-secondary/10 rounded-2xl">
+                    <div class="text-4xl md:text-5xl font-bold text-secondary mb-2">500+</div>
+                    <div class="text-gray-700 font-medium">Tons Exported Annually</div>
+                </div>
+
+                <div class="text-center p-6 bg-gradient-to-br from-tertiary/5 to-tertiary/10 rounded-2xl">
+                    <div class="text-4xl md:text-5xl font-bold text-tertiary mb-2">25+</div>
+                    <div class="text-gray-700 font-medium">Active Partners</div>
+                </div>
+
+                <div class="text-center p-6 bg-gradient-to-br from-primary/5 to-primary/10 rounded-2xl">
+                    <div class="text-4xl md:text-5xl font-bold text-primary mb-2">4</div>
+                    <div class="text-gray-700 font-medium">Regions Served</div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="#get-started"
+                    class="btn-shimmer inline-block px-8 py-4 rounded-lg bg-fourth text-white font-bold hover:bg-black hover:text-white transition-all duration-300 shadow-md hover:shadow-lg border border-white/10">
+                    Expand to Your Region
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: EXPORT PROCESS -->
+    <section class="py-20 bg-light-brown reveal">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    From Harvest to Your Doorstep—Seamless & Transparent
+                </h2>
+                <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
+                    Seven steps that ensure quality, compliance, and on-time delivery.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="text-white font-bold text-xl">1</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">Quality Harvest</h3>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        Only export-grade produce makes the cut. Our farmers harvest at peak freshness using organic
+                        methods.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="text-white font-bold text-xl">2</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">Rigorous Testing</h3>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        Every batch undergoes quality checks for pesticides, heavy metals, and organic compliance. Zero
+                        tolerance for contamination.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 bg-tertiary rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="text-white font-bold text-xl">3</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">Professional Grading</h3>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        Products are sorted, graded, and categorized based on international standards and your
+                        specifications.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="text-white font-bold text-xl">4</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">Hygienic Packaging</h3>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        Food-safe, eco-friendly packaging that preserves freshness and meets international shipping
+                        regulations.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="text-white font-bold text-xl">5</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">Documentation & Compliance</h3>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        We handle all export paperwork, phytosanitary certificates, and customs documentation required
+                        for your destination.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 bg-tertiary rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="text-white font-bold text-xl">6</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">Efficient Logistics</h3>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        Temperature-controlled transportation and partnerships with reliable freight forwarders ensure
+                        timely delivery.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg md:col-span-2 lg:col-span-1">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                            <span class="text-white font-bold text-xl">7</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">Delivery & Support</h3>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        Track your shipment in real-time. Our team stays in touch until your order arrives safely.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: QUALITY ASSURANCE -->
+    <section class="py-20 bg-white reveal">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    Quality Isn't Negotiable—It's Guaranteed
+                </h2>
+                <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
+                    Multiple checkpoints ensure that every shipment meets the highest standards.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-primary/5 to-primary/10 rounded-2xl p-8 border-l-4 border-primary">
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Pre-Harvest Testing</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Soil and water analysis before cultivation begins. Only approved lands grow export crops.
+                    </p>
+                </div>
+
+                <div
+                    class="bg-gradient-to-br from-secondary/5 to-secondary/10 rounded-2xl p-8 border-l-4 border-secondary">
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">During Cultivation</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Regular monitoring by agronomists. Organic protocols followed strictly with documented records.
+                    </p>
+                </div>
+
+                <div
+                    class="bg-gradient-to-br from-tertiary/5 to-tertiary/10 rounded-2xl p-8 border-l-4 border-tertiary">
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Post-Harvest Inspection</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Visual inspection, size grading, and damage assessment before processing.
+                    </p>
+                </div>
+
+                <div class="bg-gradient-to-br from-primary/5 to-primary/10 rounded-2xl p-8 border-l-4 border-primary">
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Laboratory Testing</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Third-party labs test for residues, contaminants, and nutritional content. Reports shared with
+                        buyers.
+                    </p>
+                </div>
+
+                <div
+                    class="bg-gradient-to-br from-secondary/5 to-secondary/10 rounded-2xl p-8 border-l-4 border-secondary">
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Cold Chain Management</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Temperature logs maintained throughout storage and transport to preserve freshness.
+                    </p>
+                </div>
+
+                <div
+                    class="bg-gradient-to-br from-tertiary/5 to-tertiary/10 rounded-2xl p-8 border-l-4 border-tertiary">
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Traceability Documentation</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Every batch comes with complete farm-to-export documentation including farmer details, harvest
+                        dates, and handling records.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: FOR INTERNATIONAL BUYERS -->
+    <section class="py-20 bg-light-yellow reveal">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    Partnership Built on Trust, Delivered with Excellence
+                </h2>
+                <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
+                    Whether you're a distributor, retailer, or food manufacturer, we make importing Indian organic
+                    produce simple and reliable.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold text-primary mb-4">Flexible Order Volumes</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        From container loads to trial shipments—we accommodate orders of all sizes as you scale.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold text-secondary mb-4">Custom Specifications</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Need specific grading, packaging, or labeling? We tailor shipments to your market requirements.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold text-tertiary mb-4">Consistent Quality</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Year after year, shipment after shipment—you get the same premium quality you expect.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold text-primary mb-4">Competitive Pricing</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Direct sourcing from farms means better margins for you without compromising on quality.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold text-secondary mb-4">Reliable Communication</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Dedicated account manager for each partner. Questions answered promptly, issues resolved
+                        quickly.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold text-tertiary mb-4">Sample Orders Available</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Try before you commit. Request samples to evaluate quality and suitability for your market.
+                    </p>
+                </div>
+            </div>
+
+            <div class="text-center flex flex-wrap justify-center gap-4">
+                <a href="#get-started"
+                    class="btn-shimmer inline-block px-8 py-4 rounded-lg bg-primary text-white font-bold hover:bg-dark-brown hover:text-white transition-all duration-300 shadow-md hover:shadow-lg">
+                    Request Product Catalog
+                </a>
+                <a href="/pages/contact.html#contact-form"
+                    class="btn-shimmer inline-block px-8 py-4 rounded-lg bg-fourth text-white font-bold hover:bg-black hover:text-white transition-all duration-300 shadow-md hover:shadow-lg">
+                    Schedule a Partnership Call
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 8: FAQs -->
+    <section class="py-20 bg-white reveal">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-12 text-center">
+                Frequently Asked Questions
+            </h2>
+
+            <div class="space-y-6">
+                <!-- Q1 -->
+                <details name="faq"
+                    class="group bg-light-yellow rounded-2xl border-l-4 border-primary overflow-hidden transition-all duration-300 hover:shadow-md">
+                    <summary
+                        class="flex items-center justify-between p-6 cursor-pointer list-none select-none outline-none">
+                        <h3 class="text-lg font-bold text-gray-900 pr-8">Q1: What makes Agrisethu's organic produce
+                            certified?</h3>
+                        <svg class="w-6 h-6 text-primary transform transition-transform duration-300 group-open:rotate-180 flex-shrink-0"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-700 leading-relaxed">
+                        <p>Our farms follow strict organic cultivation practices—no synthetic pesticides, fertilizers,
+                            or GMOs. All produce undergoes third-party testing and meets international organic
+                            standards.</p>
+                    </div>
+                </details>
+
+                <!-- Q2 -->
+                <details name="faq"
+                    class="group bg-light-yellow rounded-2xl border-l-4 border-secondary overflow-hidden transition-all duration-300 hover:shadow-md">
+                    <summary
+                        class="flex items-center justify-between p-6 cursor-pointer list-none select-none outline-none">
+                        <h3 class="text-lg font-bold text-gray-900 pr-8">Q2: What is the minimum order quantity for
+                            exports?</h3>
+                        <svg class="w-6 h-6 text-secondary transform transition-transform duration-300 group-open:rotate-180 flex-shrink-0"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-700 leading-relaxed">
+                        <p>We work with buyers of all sizes. For international shipments, we typically recommend
+                            starting with a half-container load (10-12 tons), but we can accommodate smaller trial
+                            orders depending on the product and destination.</p>
+                    </div>
+                </details>
+
+                <!-- Q3 -->
+                <details name="faq"
+                    class="group bg-light-yellow rounded-2xl border-l-4 border-tertiary overflow-hidden transition-all duration-300 hover:shadow-md">
+                    <summary
+                        class="flex items-center justify-between p-6 cursor-pointer list-none select-none outline-none">
+                        <h3 class="text-lg font-bold text-gray-900 pr-8">Q3: How long does shipping take?</h3>
+                        <svg class="w-6 h-6 text-tertiary transform transition-transform duration-300 group-open:rotate-180 flex-shrink-0"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-700 leading-relaxed">
+                        <p>Delivery timelines depend on destination and shipping method. Air freight: 3-7 days. Sea
+                            freight: 15-30 days. We provide estimated delivery dates before you confirm orders.</p>
+                    </div>
+                </details>
+
+                <!-- Q4 -->
+                <details name="faq"
+                    class="group bg-light-yellow rounded-2xl border-l-4 border-primary overflow-hidden transition-all duration-300 hover:shadow-md">
+                    <summary
+                        class="flex items-center justify-between p-6 cursor-pointer list-none select-none outline-none">
+                        <h3 class="text-lg font-bold text-gray-900 pr-8">Q4: Can I customize packaging and labeling?
+                        </h3>
+                        <svg class="w-6 h-6 text-primary transform transition-transform duration-300 group-open:rotate-180 flex-shrink-0"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-700 leading-relaxed">
+                        <p>Absolutely. We offer custom packaging, private labeling, and branding options to meet your
+                            market requirements. Additional costs may apply based on specifications.</p>
+                    </div>
+                </details>
+
+                <!-- Q5 -->
+                <details name="faq"
+                    class="group bg-light-yellow rounded-2xl border-l-4 border-secondary overflow-hidden transition-all duration-300 hover:shadow-md">
+                    <summary
+                        class="flex items-center justify-between p-6 cursor-pointer list-none select-none outline-none">
+                        <h3 class="text-lg font-bold text-gray-900 pr-8">Q5: How do you ensure consistent supply
+                            throughout the year?</h3>
+                        <svg class="w-6 h-6 text-secondary transform transition-transform duration-300 group-open:rotate-180 flex-shrink-0"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-700 leading-relaxed">
+                        <p>Our network of managed farms across different regions allows us to rotate crops and maintain
+                            year-round availability for most products. We also plan cultivation based on advance orders.
+                        </p>
+                    </div>
+                </details>
+
+                <!-- Q6 -->
+                <details name="faq"
+                    class="group bg-light-yellow rounded-2xl border-l-4 border-tertiary overflow-hidden transition-all duration-300 hover:shadow-md">
+                    <summary
+                        class="flex items-center justify-between p-6 cursor-pointer list-none select-none outline-none">
+                        <h3 class="text-lg font-bold text-gray-900 pr-8">Q6: What payment terms do you offer?</h3>
+                        <svg class="w-6 h-6 text-tertiary transform transition-transform duration-300 group-open:rotate-180 flex-shrink-0"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-700 leading-relaxed">
+                        <p>We work with flexible payment terms based on order size and partnership history. Options
+                            include advance payment, letter of credit (LC), and installment plans for established
+                            partners.</p>
+                    </div>
+                </details>
+
+                <!-- Q7 -->
+                <details name="faq"
+                    class="group bg-light-yellow rounded-2xl border-l-4 border-primary overflow-hidden transition-all duration-300 hover:shadow-md">
+                    <summary
+                        class="flex items-center justify-between p-6 cursor-pointer list-none select-none outline-none">
+                        <h3 class="text-lg font-bold text-gray-900 pr-8">Q7: Do you handle all export documentation?
+                        </h3>
+                        <svg class="w-6 h-6 text-primary transform transition-transform duration-300 group-open:rotate-180 flex-shrink-0"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-700 leading-relaxed">
+                        <p>Yes. We manage phytosanitary certificates, certificates of origin, customs declarations, and
+                            all paperwork required for smooth clearance at your destination port.</p>
+                    </div>
+                </details>
+
+                <!-- Q8 -->
+                <details name="faq"
+                    class="group bg-light-yellow rounded-2xl border-l-4 border-secondary overflow-hidden transition-all duration-300 hover:shadow-md">
+                    <summary
+                        class="flex items-center justify-between p-6 cursor-pointer list-none select-none outline-none">
+                        <h3 class="text-lg font-bold text-gray-900 pr-8">Q8: What if there's a quality issue with my
+                            shipment?</h3>
+                        <svg class="w-6 h-6 text-secondary transform transition-transform duration-300 group-open:rotate-180 flex-shrink-0"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-700 leading-relaxed">
+                        <p>Quality issues are rare due to our rigorous testing, but if any arise, we take full
+                            responsibility. We'll work with you to resolve the issue through replacement, credit, or
+                            appropriate compensation.</p>
+                    </div>
+                </details>
+
+                <!-- Q9 -->
+                <details name="faq"
+                    class="group bg-light-yellow rounded-2xl border-l-4 border-tertiary overflow-hidden transition-all duration-300 hover:shadow-md">
+                    <summary
+                        class="flex items-center justify-between p-6 cursor-pointer list-none select-none outline-none">
+                        <h3 class="text-lg font-bold text-gray-900 pr-8">Q9: Can I visit the farms where my produce is
+                            grown?</h3>
+                        <svg class="w-6 h-6 text-tertiary transform transition-transform duration-300 group-open:rotate-180 flex-shrink-0"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-700 leading-relaxed">
+                        <p>Yes! We welcome buyer visits. Transparency is core to our values. Schedule a farm tour to see
+                            our operations firsthand and meet the farmers growing your produce.</p>
+                    </div>
+                </details>
+
+                <!-- Q10 -->
+                <details name="faq"
+                    class="group bg-light-yellow rounded-2xl border-l-4 border-primary overflow-hidden transition-all duration-300 hover:shadow-md">
+                    <summary
+                        class="flex items-center justify-between p-6 cursor-pointer list-none select-none outline-none">
+                        <h3 class="text-lg font-bold text-gray-900 pr-8">Q10: How do I start a partnership with
+                            Agrisethu?</h3>
+                        <svg class="w-6 h-6 text-primary transform transition-transform duration-300 group-open:rotate-180 flex-shrink-0"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-700 leading-relaxed">
+                        <p>Simple. Contact our export team, share your requirements, and we'll send you our product
+                            catalog with specifications and pricing. Request samples, and once satisfied, we'll
+                            formalize the partnership agreement.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 9: GET STARTED -->
+    <section id="get-started"
+        class="py-20 bg-gradient-to-br from-primary via-secondary to-tertiary relative overflow-hidden reveal">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-10 left-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+            <div class="absolute bottom-10 right-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">
+                Ready to Import Premium Organic Produce from India?
+            </h2>
+            <p class="text-lg sm:text-xl text-white/90 max-w-3xl mx-auto mb-12 leading-relaxed">
+                Partner with Agrisethu and bring authentic, traceable, organic products to your market.
+            </p>
+
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <a href="/pages/contact.html"
+                    class="btn-shimmer inline-block px-10 py-5 rounded-lg bg-white text-primary font-bold text-lg hover:bg-light-yellow transition-all duration-300 shadow-xl hover:shadow-2xl">
+                    Contact Our Export Team
+                </a>
+                <a href="#"
+                    class="btn-shimmer inline-block px-10 py-5 rounded-lg bg-white/10 backdrop-blur-sm text-white font-bold text-lg hover:bg-white hover:text-primary border-2 border-white transition-all duration-300 shadow-xl hover:shadow-2xl">
+                    Download Product Catalog
+                </a>
+            </div>
+
+            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+                <h3 class="text-2xl font-bold text-white mb-6">Quick Contact</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-white">
+                    <div>
+                        <div class="text-sm text-white/70 mb-1">Email</div>
+                        <div class="font-bold">exports@agrisethu.com</div>
+                    </div>
+                    <div>
+                        <div class="text-sm text-white/70 mb-1">Phone</div>
+                        <div class="font-bold">+91 XXX XXX XXXX</div>
+                    </div>
+                    <div>
+                        <div class="text-sm text-white/70 mb-1">WhatsApp</div>
+                        <div class="font-bold">+91 XXX XXX XXXX</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <h3 class="text-white text-xl font-bold mb-4">About Agrisethu</h3>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        Connecting land, farmers, and global markets through sustainable organic agriculture powered by
+                        technology.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-white text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="/index.html" class="hover:text-primary transition-colors duration-300">Home</a>
+                        </li>
+                        <li><a href="/pages/story.html" class="hover:text-primary transition-colors duration-300">Our
+                                Story</a></li>
+                        <li><a href="/index.html#services"
+                                class="hover:text-primary transition-colors duration-300">Services</a></li>
+                        <li><a href="/pages/contact.html"
+                                class="hover:text-primary transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white text-xl font-bold mb-4">Our Services</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="hover:text-primary transition-colors duration-300">Farmer Employment</a>
+                        </li>
+                        <li><a href="#" class="hover:text-primary transition-colors duration-300">Land Leasing</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors duration-300">Organic Farming</a>
+                        </li>
+                        <li><a href="/pages/exports.html"
+                                class="hover:text-primary transition-colors duration-300">Global Exports</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white text-xl font-bold mb-4">Get In Touch</h3>
+                    <div class="space-y-4">
+                        <p class="text-gray-400">+91 XXX XXX XXXX</p>
+                        <p class="text-gray-400">exports@agrisethu.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-gray-800">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-gray-400 text-sm text-center md:text-left">
+                        © 2024 Agrisethu Private Limited. All rights reserved.
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-6 text-sm">
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">Privacy
+                            Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">Terms &
+                            Conditions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>
