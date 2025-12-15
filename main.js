@@ -3,12 +3,38 @@ document.addEventListener('DOMContentLoaded', () => {
     const btn = document.querySelector(".mobile-menu-button");
     const menu = document.querySelector(".mobile-menu");
 
+
     if (btn && menu) {
-        btn.addEventListener("click", () => {
+        // Toggle menu on button click
+        btn.addEventListener("click", (e) => {
+            e.stopPropagation();
             menu.classList.toggle("hidden");
         });
-    }
 
+        // Close menu when clicking outside
+        document.addEventListener("click", (e) => {
+            if (!menu.classList.contains("hidden") &&
+                !menu.contains(e.target) &&
+                !btn.contains(e.target)) {
+                menu.classList.add("hidden");
+            }
+        });
+
+        // Close menu when clicking a link
+        const menuLinks = menu.querySelectorAll("a");
+        menuLinks.forEach(link => {
+            link.addEventListener("click", () => {
+                menu.classList.add("hidden");
+            });
+        });
+
+        // Close menu on window resize to desktop size
+        window.addEventListener("resize", () => {
+            if (window.innerWidth >= 768) { // md breakpoint
+                menu.classList.add("hidden");
+            }
+        });
+    }
     // Navbar Scroll Logic
     const navbar = document.querySelector("nav");
     let lastScrollY = window.scrollY;
@@ -92,7 +118,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     loop: true,
                     showCursor: true,
                     cursorChar: '|',
-                    autoInsertCss: true
+                    autoInsertCss: true,
+                    contentType: 'string'
                 });
             }
         });
