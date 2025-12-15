@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;500;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <!-- Typed.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <style>
         html {
             scroll-behavior: smooth;
@@ -31,7 +34,7 @@
 
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#"
+                    <a href="/index.html"
                         class="text-primary font-bold hover:text-secondary transition-colors duration-300">Home</a>
                     <a href="/pages/story.html"
                         class="text-gray-600 font-medium hover:text-primary transition-colors duration-300">Our
@@ -50,13 +53,13 @@
                         </button>
                         <div
                             class="absolute left-0 top-full mt-0 w-56 bg-white rounded-b-xl shadow-xl py-2 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 transform origin-top-left border-t-2 border-primary">
-                            <a href="#"
+                            <a href="/index.html#services"
                                 class="block px-6 py-3 text-sm text-gray-600 hover:bg-light-yellow hover:text-primary transition-colors">For
                                 Landowners</a>
-                            <a href="#"
+                            <a href="/pages/farmer-employment.html"
                                 class="block px-6 py-3 text-sm text-gray-600 hover:bg-light-yellow hover:text-primary transition-colors">For
                                 Farmers</a>
-                            <a href="#"
+                            <a href="/pages/animal-husbandry.html"
                                 class="block px-6 py-3 text-sm text-gray-600 hover:bg-light-yellow hover:text-primary transition-colors">Animal
                                 Husbandry</a>
                             <a href="/pages/exports.html"
@@ -87,7 +90,8 @@
         <div
             class="mobile-menu hidden md:hidden bg-white border-t border-gray-100 absolute top-full left-0 w-full shadow-lg">
             <div class="px-2 pt-2 pb-3 space-y-1">
-                <a href="#" class="block px-4 py-3 rounded-lg text-base font-bold text-primary bg-light-yellow">Home</a>
+                <a href="/index.html"
+                    class="block px-4 py-3 rounded-lg text-base font-bold text-primary bg-light-yellow">Home</a>
                 <a href="/pages/story.html"
                     class="block px-4 py-3 rounded-lg text-base font-medium text-gray-600 hover:text-primary hover:bg-gray-50">Our
                     Story</a>
@@ -95,12 +99,16 @@
                 <div class="px-4 py-2">
                     <div class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-2">Services</div>
                     <div class="pl-4 space-y-2 border-l-2 border-gray-100">
-                        <a href="#" class="block text-sm font-medium text-gray-600 hover:text-primary">For
+                        <a href="/index.html#services"
+                            class="block text-sm font-medium text-gray-600 hover:text-primary">For
                             Landowners</a>
-                        <a href="#" class="block text-sm font-medium text-gray-600 hover:text-primary">For Farmers</a>
-                        <a href="#" class="block text-sm font-medium text-gray-600 hover:text-primary">Animal
+                        <a href="/pages/farmer-employment.html"
+                            class="block text-sm font-medium text-gray-600 hover:text-primary">For Farmers</a>
+                        <a href="/pages/animal-husbandry.html"
+                            class="block text-sm font-medium text-gray-600 hover:text-primary">Animal
                             Husbandry</a>
-                        <a href="#" class="block text-sm font-medium text-gray-600 hover:text-primary">Global
+                        <a href="/pages/exports.html"
+                            class="block text-sm font-medium text-gray-600 hover:text-primary">Global
                             Exports</a>
                     </div>
                 </div>
@@ -145,8 +153,9 @@
                 </span>
 
                 <h1
-                    class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight mb-4 sm:mb-6 drop-shadow-xl tracking-tight">
-                    Bridging India's Land, Farmers & Global <span class="text-secondary">Markets</span>
+                    class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight mb-4 sm:mb-6 drop-shadow-xl tracking-tight min-h-[1.2em]">
+                    <span class="typing-text"
+                        data-strings='["Bridging India&apos;s Land, Farmers & Global <span class=\"text-secondary\">Markets</span>"]'></span>
                 </h1>
 
                 <p
@@ -157,13 +166,13 @@
                 </p>
 
                 <div class="flex flex-col sm:flex-row gap-4 justify-center xl:justify-start">
-                    <a href="#services"
-                        class="btn-shimmer px-6 sm:px-8 py-3 sm:py-4 rounded-lg bg-fourth text-white font-bold hover:bg-black hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl text-center text-sm sm:text-base">
-                        Explore Services
-                    </a>
                     <a href="/pages/story.html"
                         class="btn-shimmer px-6 sm:px-8 py-3 sm:py-4 rounded-lg bg-primary text-white font-bold hover:bg-dark-brown transition-all duration-300 shadow-md hover:shadow-lg text-center text-sm sm:text-base">
                         Our Story
+                    </a>
+                    <a href="#impact"
+                        class="btn-shimmer border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-primary transition-colors duration-300">
+                        See Our Impact
                     </a>
                 </div>
             </div>
@@ -240,7 +249,7 @@
                             sustainable income across multiple farmlands.
                         </p>
                         <div>
-                            <a href="/pages/contact.html#contact-form"
+                            <a href="/pages/farmer-employment.html"
                                 class="btn-shimmer inline-block px-8 py-4 rounded-lg bg-fourth text-white font-bold hover:bg-black transition-all duration-300 shadow-md hover:shadow-lg">
                                 Join Our Team
                             </a>
@@ -310,7 +319,7 @@
                             operations that provide landowners alternative income streams.
                         </p>
                         <div>
-                            <a href="/pages/contact.html#contact-form"
+                            <a href="/pages/animal-husbandry.html"
                                 class="btn-shimmer inline-block px-8 py-4 rounded-lg bg-fourth text-white font-bold hover:bg-black transition-all duration-300 shadow-md hover:shadow-lg">
                                 Learn More
                             </a>
@@ -394,17 +403,22 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
                 <div
                     class="bg-gradient-to-br from-primary/5 to-primary/10 rounded-2xl p-8 text-center border border-primary/20 hover:shadow-xl transition-shadow duration-300">
-                    <div class="text-4xl md:text-5xl font-bold text-primary mb-2">1000+</div>
+                    <div class="text-4xl md:text-5xl font-bold text-primary mb-2 stats-counter" data-target="1000"
+                        data-suffix="+">0</div>
                     <div class="text-gray-700 font-medium">Acres Under Cultivation</div>
                 </div>
+
                 <div
                     class="bg-gradient-to-br from-secondary/5 to-secondary/10 rounded-2xl p-8 text-center border border-secondary/20 hover:shadow-xl transition-shadow duration-300">
-                    <div class="text-4xl md:text-5xl font-bold text-secondary mb-2">500+</div>
+                    <div class="text-4xl md:text-5xl font-bold text-secondary mb-2 stats-counter" data-target="500"
+                        data-suffix="+">0</div>
                     <div class="text-gray-700 font-medium">Skilled Farmers Employed</div>
                 </div>
+
                 <div
                     class="bg-gradient-to-br from-tertiary/5 to-tertiary/10 rounded-2xl p-8 text-center border border-tertiary/20 hover:shadow-xl transition-shadow duration-300">
-                    <div class="text-4xl md:text-5xl font-bold text-tertiary mb-2">100%</div>
+                    <div class="text-4xl md:text-5xl font-bold text-tertiary mb-2 stats-counter" data-target="100"
+                        data-suffix="%">0</div>
                     <div class="text-gray-700 font-medium">Organic & Sustainable</div>
                 </div>
             </div>
@@ -491,14 +505,17 @@
                 <div>
                     <h3 class="text-white text-xl font-bold mb-4">Our Services</h3>
                     <ul class="space-y-3">
-                        <li><a href="#" class="hover:text-primary transition-colors duration-300">Farmer Employment</a>
+                        <li><a href="/pages/farmer-employment.html"
+                                class="hover:text-primary transition-colors duration-300">Farmer Employment</a>
                         </li>
                         <li><a href="#" class="hover:text-primary transition-colors duration-300">Land Leasing</a></li>
                         <li><a href="#" class="hover:text-primary transition-colors duration-300">Organic Farming</a>
                         </li>
-                        <li><a href="#" class="hover:text-primary transition-colors duration-300">Animal Husbandry</a>
+                        <li><a href="/pages/animal-husbandry.html"
+                                class="hover:text-primary transition-colors duration-300">Animal Husbandry</a>
                         </li>
-                        <li><a href="#" class="hover:text-primary transition-colors duration-300">Global Exports</a>
+                        <li><a href="/pages/exports.html"
+                                class="hover:text-primary transition-colors duration-300">Global Exports</a>
                         </li>
                         <li><a href="#" class="hover:text-primary transition-colors duration-300">Crop Advisory</a></li>
                         <li><a href="#" class="hover:text-primary transition-colors duration-300">Insurance

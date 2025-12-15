@@ -1,4 +1,4 @@
-import './style.css'
+// css imported in html
 
 document.addEventListener('DOMContentLoaded', () => {
     // Mobile Menu Logic
@@ -45,4 +45,58 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     revealElements.forEach(el => revealObserver.observe(el));
+
+    // Number Counter Animation
+    const counters = document.querySelectorAll('.stats-counter');
+    const counterObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const counter = entry.target;
+                const target = parseInt(counter.getAttribute('data-target'));
+                const suffix = counter.getAttribute('data-suffix') || '';
+                const prefix = counter.getAttribute('data-prefix') || '';
+                let current = 0;
+                // Adjust duration/steps as needed
+                const duration = 2000; // 2 seconds
+                const steps = 50;
+                const increment = target / steps;
+                const stepTime = duration / steps;
+
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        counter.textContent = prefix + target + suffix;
+                        clearInterval(timer);
+                    } else {
+                        counter.textContent = prefix + Math.floor(current) + suffix;
+                    }
+                }, stepTime);
+
+                observer.unobserve(counter);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    counters.forEach(counter => counterObserver.observe(counter));
+
+    // Typed.js Initialization (looking for elements with class 'typing-text')
+    // We assume Typed.js script is loaded in the HTML
+    const typingElements = document.querySelectorAll('.typing-text');
+    if (typingElements.length > 0 && typeof Typed !== 'undefined') {
+        typingElements.forEach(el => {
+            const strings = JSON.parse(el.getAttribute('data-strings') || '[]');
+            if (strings.length > 0) {
+                new Typed(el, {
+                    strings: strings,
+                    typeSpeed: 50,
+                    backSpeed: 30,
+                    backDelay: 2000,
+                    loop: true,
+                    showCursor: true,
+                    cursorChar: '|',
+                    autoInsertCss: true
+                });
+            }
+        });
+    }
 });

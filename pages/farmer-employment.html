@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Employment - Agrisethu</title>
+    <meta name="description"
+        content="Join Agrisethu as a farmer employee. Stable salary, professional training, and dignity of labor. Be part of the agricultural revolution.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <!-- Typed.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="font-sans text-gray-800 bg-light-yellow">
+    <!-- Navbar -->
+    <nav class="bg-white/95 backdrop-blur-sm shadow-sm fixed w-full z-50 transition-all duration-300 navbar-visible">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center cursor-pointer">
+                    <a href="/index.html">
+                        <img class="h-20 w-auto md:h-24 transition-all duration-300 hover:scale-105"
+                            src="/assets/images/logo.png" alt="Agrisethu Logo">
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/index.html"
+                        class="text-gray-600 font-medium hover:text-primary transition-colors duration-300">Home</a>
+                    <a href="/pages/story.html"
+                        class="text-gray-600 font-medium hover:text-primary transition-colors duration-300">Our
+                        Story</a>
+
+                    <!-- Dropdown -->
+                    <div class="relative group h-20 flex items-center">
+                        <button
+                            class="text-gray-600 group-hover:text-primary font-medium flex items-center transition-colors duration-300 outline-none">
+                            Services
+                            <svg class="ml-1 h-4 w-4 fill-current transition-transform duration-300 group-hover:rotate-180"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                <path
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" />
+                            </svg>
+                        </button>
+                        <div
+                            class="absolute left-0 top-full mt-0 w-56 bg-white rounded-b-xl shadow-xl py-2 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 transform origin-top-left border-t-2 border-primary">
+                            <a href="/index.html#services"
+                                class="block px-6 py-3 text-sm text-gray-600 hover:bg-light-yellow hover:text-primary transition-colors">For
+                                Landowners</a>
+                            <a href="/pages/farmer-employment.html"
+                                class="block px-6 py-3 text-sm text-primary font-bold bg-light-yellow">For
+                                Farmers</a>
+                            <a href="/pages/animal-husbandry.html"
+                                class="block px-6 py-3 text-sm text-gray-600 hover:bg-light-yellow hover:text-primary transition-colors">Animal
+                                Husbandry</a>
+                            <a href="/pages/exports.html"
+                                class="block px-6 py-3 text-sm text-gray-600 hover:bg-light-yellow hover:text-primary transition-colors">Global
+                                Exports</a>
+                        </div>
+                    </div>
+
+                    <a href="/pages/contact.html#contact-form"
+                        class="btn-shimmer px-6 py-2.5 rounded-lg bg-primary text-white font-bold hover:bg-dark-brown transition-all duration-300 shadow-md hover:shadow-lg">Contact</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="flex items-center md:hidden">
+                    <button type="button"
+                        class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-primary hover:bg-light-yellow focus:outline-none transition-colors">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div
+            class="mobile-menu hidden md:hidden bg-white border-t border-gray-100 absolute top-full left-0 w-full shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="/index.html"
+                    class="block px-4 py-3 rounded-lg text-base font-medium text-gray-600 hover:text-primary hover:bg-gray-50">Home</a>
+                <a href="/pages/story.html"
+                    class="block px-4 py-3 rounded-lg text-base font-medium text-gray-600 hover:text-primary hover:bg-gray-50">Our
+                    Story</a>
+                <div class="px-4 py-2">
+                    <div class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-2">Services</div>
+                    <div class="pl-4 space-y-2 border-l-2 border-gray-100">
+                        <a href="/index.html#services"
+                            class="block text-sm font-medium text-gray-600 hover:text-primary">For Landowners</a>
+                        <a href="/pages/farmer-employment.html"
+                            class="block text-sm font-bold text-primary bg-light-yellow px-2 py-1 rounded">For
+                            Farmers</a>
+                        <a href="/pages/animal-husbandry.html"
+                            class="block text-sm font-medium text-gray-600 hover:text-primary">Animal Husbandry</a>
+                        <a href="/pages/exports.html"
+                            class="block text-sm font-medium text-gray-600 hover:text-primary">Global
+                            Exports</a>
+                    </div>
+                </div>
+                <a href="/pages/contact.html#contact-form"
+                    class="block w-full text-center px-4 py-3 mt-4 rounded-lg font-bold text-white bg-primary hover:bg-secondary shadow-md">Contact
+                    Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECTION 1: HERO -->
+    <section class="relative min-h-[70vh] flex items-center justify-center overflow-hidden pt-20 reveal">
+        <div class="absolute inset-0 z-0">
+            <img src="/assets/images/your-hero-image.png" alt="Agrisethu Farmer" class="w-full h-full object-cover">
+            <div
+                class="absolute inset-0 bg-gradient-to-br from-primary/90 via-black/40 to-tertiary/70 mix-blend-multiply">
+            </div>
+        </div>
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 py-20">
+            <h1
+                class="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight min-h-[1.2em]">
+                <span class="typing-text"
+                    data-strings='["A Partnership of Dignity - Agrisethu for Our Farmers"]'></span>
+            </h1>
+            <p class="text-lg sm:text-xl md:text-2xl text-white/90 max-w-3xl mx-auto mb-10 leading-relaxed">
+                We are changing lives and changing the future of agriculture, starting with your future
+            </p>
+            <a href="/pages/contact.html#contact-form"
+                class="btn-shimmer inline-block px-6 sm:px-8 py-3 sm:py-4 rounded-lg bg-primary text-white font-bold hover:bg-dark-brown transition-all duration-300 shadow-md hover:shadow-lg text-center text-sm sm:text-base text-lg">
+                Join as Farmer
+            </a>
+        </div>
+    </section>
+
+    <!-- SECTION 2: ABOUT US -->
+    <section class="py-20 bg-white reveal">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                        Our Purpose - A Better Future for Farmers
+                    </h2>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        For many years, farming has been uncertain — changing wages, seasonal problems, and little
+                        recognition. At Agrisethu, we believe the people who feed the world deserve security, stability,
+                        and the utmost dignity.
+                    </p>
+                    <p class="text-lg text-primary font-bold leading-relaxed">
+                        You are not laborers, You are skilled professionals.<br>
+                        You are employees.
+                    </p>
+                </div>
+                <div class="relative">
+                    <img src="/assets/images/about-section.png" alt="Happy Farmers"
+                        class="rounded-2xl shadow-xl w-full h-auto object-cover transform hover:scale-105 transition-transform duration-500">
+                    <div
+                        class="absolute -bottom-6 -left-6 w-24 h-24 bg-secondary rounded-full flex items-center justify-center shadow-lg hidden md:flex">
+                        <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: BENEFITS -->
+    <section class="py-20 bg-light-brown reveal">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    Why join us?
+                </h2>
+                <p class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
+                    Here are the key benefits and work culture
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Benefit 1 -->
+                <div
+                    class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group">
+                    <div class="h-56 overflow-hidden">
+                        <img src="/assets/images/benefit 1.jpg" alt="Stable Employment"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-8 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Stable Employment</h3>
+                        <p class="text-gray-700">
+                            You get a regular monthly salary. No more tension of daily wages.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div
+                    class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group">
+                    <div class="h-56 overflow-hidden">
+                        <img src="/assets/images/benefit 2.png" alt="Professional Training"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-8 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Professional Training</h3>
+                        <p class="text-gray-700">
+                            We train you in good farming practices, organic methods, and modern tools.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div
+                    class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group">
+                    <div class="h-56 overflow-hidden">
+                        <img src="/assets/images/benefit 3.jpg" alt="Safety and Compliance"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-8 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Safety & Compliance</h3>
+                        <p class="text-gray-700">
+                            We follow safe working conditions and make sure every farmer is protected.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Benefit 4 -->
+                <div
+                    class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group">
+                    <div class="h-56 overflow-hidden">
+                        <img src="/assets/images/benefit 4.png" alt="Long-term Engagement"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-8 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Long-term Engagement</h3>
+                        <p class="text-gray-700">
+                            Regular work based on your skills in farming or animal husbandry.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Benefit 5 -->
+                <div
+                    class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group">
+                    <div class="h-56 overflow-hidden">
+                        <img src="/assets/images/benefit 5.png" alt="Insurance"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-8 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Insurance</h3>
+                        <p class="text-gray-700">
+                            Insurance assistance for farmers, crop, land and livestock.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Benefit 6 -->
+                <div
+                    class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group">
+                    <div class="h-56 overflow-hidden">
+                        <img src="/assets/images/benefit 6.png" alt="Dignity and Respect"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-8 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Dignity and Respect</h3>
+                        <p class="text-gray-700">
+                            Farmers are valued. You are employees, not laborers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: CAREERS -->
+    <section class="py-20 relative overflow-hidden reveal">
+        <div class="absolute inset-0 z-0">
+            <img src="/assets/images/recruitment-banner.png" alt="We are hiring" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-primary/80 mix-blend-multiply"></div>
+        </div>
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 py-10">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">
+                We Need More Hands!
+            </h2>
+            <p class="text-lg sm:text-xl text-white/90 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Want to work with us? We're hiring!
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="/pages/contact.html#contact-form"
+                    class="btn-shimmer inline-block px-8 py-4 rounded-lg bg-white text-primary font-bold hover:bg-black hover:text-white transition-all duration-300 shadow-xl hover:shadow-2xl text-lg">
+                    Join as Farmer
+                </a>
+                <a href="#faqs"
+                    class="btn-shimmer inline-block px-8 py-4 rounded-lg bg-transparent text-white font-bold border-2 border-white hover:bg-white hover:text-primary transition-all duration-300 shadow-xl hover:shadow-2xl text-lg">
+                    FAQs
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: FAQs -->
+    <section id="faqs" class="py-20 bg-white reveal">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    Frequently Asked Questions
+                </h2>
+                <p class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
+                    Answers to common queries from farmers and visitors
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- Q1 -->
+                <details name="faq"
+                    class="group bg-light-yellow rounded-2xl border-l-4 border-primary overflow-hidden transition-all duration-300 hover:shadow-md">
+                    <summary
+                        class="flex items-center justify-between p-6 cursor-pointer list-none select-none outline-none">
+                        <h3 class="text-lg font-bold text-gray-900 pr-8">Q1: Will I get a monthly salary?</h3>
+                        <svg class="w-6 h-6 text-primary transform transition-transform duration-300 group-open:rotate-180 flex-shrink-0"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-700 leading-relaxed">
+                        <p>Yes. Every farmer working with Agrisethu receives a fixed monthly salary, just like any other
+                            employee.</p>
+                    </div>
+                </details>
+
+                <!-- Q2 -->
+                <details name="faq"
+                    class="group bg-light-yellow rounded-2xl border-l-4 border-secondary overflow-hidden transition-all duration-300 hover:shadow-md">
+                    <summary
+                        class="flex items-center justify-between p-6 cursor-pointer list-none select-none outline-none">
+                        <h3 class="text-lg font-bold text-gray-900 pr-8">Q2: Do I need my own land?</h3>
+                        <svg class="w-6 h-6 text-secondary transform transition-transform duration-300 group-open:rotate-180 flex-shrink-0"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-700 leading-relaxed">
+                        <p>No. Land is provided based on the project. If you have land, that's also welcome, but it's
+                            not required.</p>
+                    </div>
+                </details>
+
+                <!-- Q3 -->
+                <details name="faq"
+                    class="group bg-light-yellow rounded-2xl border-l-4 border-tertiary overflow-hidden transition-all duration-300 hover:shadow-md">
+                    <summary
+                        class="flex items-center justify-between p-6 cursor-pointer list-none select-none outline-none">
+                        <h3 class="text-lg font-bold text-gray-900 pr-8">Q3: Do I have to pay anything to join?</h3>
+                        <svg class="w-6 h-6 text-tertiary transform transition-transform duration-300 group-open:rotate-180 flex-shrink-0"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-700 leading-relaxed">
+                        <p>No. There is no joining fee, no hidden charges.</p>
+                    </div>
+                </details>
+
+                <!-- Q4 -->
+                <details name="faq"
+                    class="group bg-light-yellow rounded-2xl border-l-4 border-primary overflow-hidden transition-all duration-300 hover:shadow-md">
+                    <summary
+                        class="flex items-center justify-between p-6 cursor-pointer list-none select-none outline-none">
+                        <h3 class="text-lg font-bold text-gray-900 pr-8">Q4: What work will I have to do?</h3>
+                        <svg class="w-6 h-6 text-primary transform transition-transform duration-300 group-open:rotate-180 flex-shrink-0"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-700 leading-relaxed">
+                        <p>Your regular farming work. We give guidance, tools, and support to make your work easier and
+                            more successful.</p>
+                    </div>
+                </details>
+
+                <!-- Q5 -->
+                <details name="faq"
+                    class="group bg-light-yellow rounded-2xl border-l-4 border-secondary overflow-hidden transition-all duration-300 hover:shadow-md">
+                    <summary
+                        class="flex items-center justify-between p-6 cursor-pointer list-none select-none outline-none">
+                        <h3 class="text-lg font-bold text-gray-900 pr-8">Q5: How do I join Agrisethu?</h3>
+                        <svg class="w-6 h-6 text-secondary transform transition-transform duration-300 group-open:rotate-180 flex-shrink-0"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-700 leading-relaxed">
+                        <p>Just fill the form or click "Join as Farmer" on the website. Our team will contact you and
+                            guide you through the next steps.</p>
+                    </div>
+                </details>
+
+                <!-- Q6 -->
+                <details name="faq"
+                    class="group bg-light-yellow rounded-2xl border-l-4 border-tertiary overflow-hidden transition-all duration-300 hover:shadow-md">
+                    <summary
+                        class="flex items-center justify-between p-6 cursor-pointer list-none select-none outline-none">
+                        <h3 class="text-lg font-bold text-gray-900 pr-8">Q6: Is this a government job?</h3>
+                        <svg class="w-6 h-6 text-tertiary transform transition-transform duration-300 group-open:rotate-180 flex-shrink-0"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-700 leading-relaxed">
+                        <p>No, it is not a government job. Agrisethu is a private organization, but we provide stable
+                            employment and support similar to a regular job. You can also contribute to Global markets.
+                        </p>
+                    </div>
+                </details>
+
+                <!-- Q7 -->
+                <details name="faq"
+                    class="group bg-light-yellow rounded-2xl border-l-4 border-primary overflow-hidden transition-all duration-300 hover:shadow-md">
+                    <summary
+                        class="flex items-center justify-between p-6 cursor-pointer list-none select-none outline-none">
+                        <h3 class="text-lg font-bold text-gray-900 pr-8">Q7: Will I get training?</h3>
+                        <svg class="w-6 h-6 text-primary transform transition-transform duration-300 group-open:rotate-180 flex-shrink-0"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-700 leading-relaxed">
+                        <p>Yes. Every farmer gets free training so you can grow crops better and earn more.</p>
+                    </div>
+                </details>
+
+                <!-- Q8 -->
+                <details name="faq"
+                    class="group bg-light-yellow rounded-2xl border-l-4 border-secondary overflow-hidden transition-all duration-300 hover:shadow-md">
+                    <summary
+                        class="flex items-center justify-between p-6 cursor-pointer list-none select-none outline-none">
+                        <h3 class="text-lg font-bold text-gray-900 pr-8">Q8: What if I don't have experience?</h3>
+                        <svg class="w-6 h-6 text-secondary transform transition-transform duration-300 group-open:rotate-180 flex-shrink-0"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-700 leading-relaxed">
+                        <p>No problem. We train beginners and guide them step by step.</p>
+                    </div>
+                </details>
+
+                <!-- Q9 -->
+                <details name="faq"
+                    class="group bg-light-yellow rounded-2xl border-l-4 border-tertiary overflow-hidden transition-all duration-300 hover:shadow-md">
+                    <summary
+                        class="flex items-center justify-between p-6 cursor-pointer list-none select-none outline-none">
+                        <h3 class="text-lg font-bold text-gray-900 pr-8">Q9: What crops will I be working with?</h3>
+                        <svg class="w-6 h-6 text-tertiary transform transition-transform duration-300 group-open:rotate-180 flex-shrink-0"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-700 leading-relaxed">
+                        <p>It depends on the project and location. We mostly focus on vegetables, fruits, and
+                            high-demand crops.</p>
+                    </div>
+                </details>
+
+                <!-- Q10 -->
+                <details name="faq"
+                    class="group bg-light-yellow rounded-2xl border-l-4 border-primary overflow-hidden transition-all duration-300 hover:shadow-md">
+                    <summary
+                        class="flex items-center justify-between p-6 cursor-pointer list-none select-none outline-none">
+                        <h3 class="text-lg font-bold text-gray-900 pr-8">Q10: Can women farmers join?</h3>
+                        <svg class="w-6 h-6 text-primary transform transition-transform duration-300 group-open:rotate-180 flex-shrink-0"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-700 leading-relaxed">
+                        <p>Absolutely. Women farmers are encouraged and welcomed.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Column 1: About Agrisethu -->
+                <div>
+                    <h3 class="text-white text-xl font-bold mb-4">About Agrisethu</h3>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        Connecting land, farmers, and global markets through sustainable organic agriculture powered by
+                        technology.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#"
+                            class="w-10 h-10 bg-gray-800 hover:bg-primary rounded-lg flex items-center justify-center transition-colors duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-gray-800 hover:bg-primary rounded-lg flex items-center justify-center transition-colors duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-gray-800 hover:bg-primary rounded-lg flex items-center justify-center transition-colors duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-gray-800 hover:bg-primary rounded-lg flex items-center justify-center transition-colors duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div>
+                    <h3 class="text-white text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="/" class="hover:text-primary transition-colors duration-300">Home</a></li>
+                        <li><a href="/pages/story.html" class="hover:text-primary transition-colors duration-300">Our
+                                Story</a></li>
+                        <li><a href="#services" class="hover:text-primary transition-colors duration-300">Services</a>
+                        </li>
+                        <li><a href="/pages/contact.html"
+                                class="hover:text-primary transition-colors duration-300">Contact</a>
+                        </li>
+                        <li><a href="#" class="hover:text-primary transition-colors duration-300">Careers</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors duration-300">Blog/Knowledge Hub</a>
+                        </li>
+                        <li><a href="#" class="hover:text-primary transition-colors duration-300">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Our Services -->
+                <div>
+                    <h3 class="text-white text-xl font-bold mb-4">Our Services</h3>
+                    <ul class="space-y-3">
+                        <li><a href="/pages/farmer-employment.html"
+                                class="hover:text-primary transition-colors duration-300">Farmer Employment</a>
+                        </li>
+                        <li><a href="#" class="hover:text-primary transition-colors duration-300">Land Leasing</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors duration-300">Organic Farming</a>
+                        </li>
+                        <li><a href="#" class="hover:text-primary transition-colors duration-300">Animal Husbandry</a>
+                        </li>
+                        <li><a href="#" class="hover:text-primary transition-colors duration-300">Global Exports</a>
+                        </li>
+                        <li><a href="#" class="hover:text-primary transition-colors duration-300">Crop Advisory</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors duration-300">Insurance
+                                Assistance</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact Information -->
+                <div>
+                    <h3 class="text-white text-xl font-bold mb-4">Get In Touch</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-primary mt-1 flex-shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                </path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <div>
+                                <p class="text-gray-400">Agrisethu Office Address</p>
+                                <p class="text-gray-400">City, State, PIN Code</p>
+                                <p class="text-gray-400">India</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-primary flex-shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                                </path>
+                            </svg>
+                            <p class="text-gray-400">+91 XXX XXX XXXX</p>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-primary flex-shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                            <p class="text-gray-400">info@agrisethu.com</p>
+                        </div>
+
+                        <div class="pt-2 border-t border-gray-800">
+                            <p class="text-sm font-bold text-white mb-2">Business Hours</p>
+                            <p class="text-sm text-gray-400">Mon - Sat: 9:00 AM - 6:00 PM</p>
+                            <p class="text-sm text-gray-400">Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="pt-8 border-t border-gray-800">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-gray-400 text-sm text-center md:text-left">
+                        © 2024 Agrisethu Private Limited. All rights reserved.
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-6 text-sm">
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">Privacy
+                            Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">Terms &
+                            Conditions</a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">Cookie
+                            Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">Refund
+                            Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>

@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;500;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <!-- Typed.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <style>
         html {
             scroll-behavior: smooth;
@@ -50,10 +53,10 @@
                             <a href="/index.html#services"
                                 class="block px-6 py-3 text-sm text-gray-600 hover:bg-light-yellow hover:text-primary transition-colors">For
                                 Landowners</a>
-                            <a href="/index.html#services"
+                            <a href="/pages/farmer-employment.html"
                                 class="block px-6 py-3 text-sm text-gray-600 hover:bg-light-yellow hover:text-primary transition-colors">For
                                 Farmers</a>
-                            <a href="/index.html#services"
+                            <a href="/pages/animal-husbandry.html"
                                 class="block px-6 py-3 text-sm text-gray-600 hover:bg-light-yellow hover:text-primary transition-colors">Animal
                                 Husbandry</a>
                             <a href="/pages/exports.html"
@@ -89,9 +92,9 @@
                     <div class="pl-4 space-y-2 border-l-2 border-gray-100">
                         <a href="/index.html#services"
                             class="block text-sm font-medium text-gray-600 hover:text-primary">For Landowners</a>
-                        <a href="/index.html#services"
+                        <a href="/pages/farmer-employment.html"
                             class="block text-sm font-medium text-gray-600 hover:text-primary">For Farmers</a>
-                        <a href="/index.html#services"
+                        <a href="/pages/animal-husbandry.html"
                             class="block text-sm font-medium text-gray-600 hover:text-primary">Animal Husbandry</a>
                         <a href="/pages/exports.html"
                             class="block text-sm font-bold text-primary bg-light-yellow px-2 py-1 rounded">Global
@@ -113,15 +116,17 @@
             <div class="absolute inset-0 bg-gradient-to-br from-primary/90 via-black/50 to-tertiary/80"></div>
         </div>
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 py-20">
-            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-                Taking India's Organic Excellence to Global Markets
+            <h1
+                class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight min-h-[1.2em]">
+                <span class="typing-text"
+                    data-strings='["Taking India&apos;s Organic Excellence to Global Markets"]'></span>
             </h1>
             <p class="text-lg sm:text-xl md:text-2xl text-white/90 max-w-3xl mx-auto mb-10 leading-relaxed">
                 From farm to international shores—100% organic produce with complete traceability and unwavering quality
                 standards.
             </p>
             <a href="#get-started"
-                class="btn-shimmer inline-block px-8 py-4 rounded-lg bg-fourth text-white font-bold hover:bg-black hover:text-white transition-all duration-300 shadow-xl hover:shadow-2xl text-lg">
+                class="btn-shimmer inline-block px-6 sm:px-8 py-3 sm:py-4 rounded-lg bg-primary text-white font-bold hover:bg-dark-brown transition-all duration-300 shadow-md hover:shadow-lg text-center text-sm sm:text-base text-lg">
                 Become an Export Partner
             </a>
         </div>
@@ -138,13 +143,15 @@
                     We bridge the gap between India's organic farms and discerning international buyers who demand
                     quality, consistency, and integrity.
                 </p>
+                <img src="../assets/images/organic-produce.png" alt="Premium Organic Produce"
+                    class="mx-auto mt-8 w-full max-w-4xl h-auto object-cover rounded-2xl shadow-lg">
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="flex flex-wrap justify-center gap-8">
                 <div
-                    class="bg-white rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    class="bg-white rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition-shadow duration-300 text-center w-full md:w-[calc(50%-2rem)] lg:w-[calc(33.333%-2rem)]">
+                    <div class="mb-6 inline-flex items-center justify-center">
+                        <svg class="w-12 h-12 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                         </svg>
@@ -157,9 +164,9 @@
                 </div>
 
                 <div
-                    class="bg-white rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    class="bg-white rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition-shadow duration-300 text-center w-full md:w-[calc(50%-2rem)] lg:w-[calc(33.333%-2rem)]">
+                    <div class="mb-6 inline-flex items-center justify-center">
+                        <svg class="w-12 h-12 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2">
                             </path>
@@ -173,9 +180,9 @@
                 </div>
 
                 <div
-                    class="bg-white rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-                    <div class="w-16 h-16 bg-tertiary rounded-full flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    class="bg-white rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition-shadow duration-300 text-center w-full md:w-[calc(50%-2rem)] lg:w-[calc(33.333%-2rem)]">
+                    <div class="mb-6 inline-flex items-center justify-center">
+                        <svg class="w-12 h-12 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                         </svg>
@@ -188,9 +195,9 @@
                 </div>
 
                 <div
-                    class="bg-white rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    class="bg-white rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition-shadow duration-300 text-center w-full md:w-[calc(50%-2rem)] lg:w-[calc(33.333%-2rem)]">
+                    <div class="mb-6 inline-flex items-center justify-center">
+                        <svg class="w-12 h-12 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
                             </path>
@@ -202,11 +209,10 @@
                         business.
                     </p>
                 </div>
-
                 <div
-                    class="bg-gradient-to-br from-secondary/5 to-secondary/10 rounded-2xl p-8 border border-secondary/20 hover:shadow-xl transition-shadow duration-300">
-                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    class="bg-white rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition-shadow duration-300 text-center w-full md:w-[calc(50%-2rem)] lg:w-[calc(33.333%-2rem)]">
+                    <div class="mb-6 inline-flex items-center justify-center">
+                        <svg class="w-12 h-12 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
                             </path>
@@ -218,6 +224,7 @@
                         and accountability.
                     </p>
                 </div>
+
             </div>
         </div>
     </section>
@@ -235,10 +242,12 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <div class="mb-6">
+                <div
+                    class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="mb-6 overflow-hidden rounded-lg">
                         <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400&h=300&fit=crop&q=80"
-                            alt="Organic Grains" class="w-full h-48 object-cover rounded-lg mb-4">
+                            alt="Organic Grains"
+                            class="w-full h-48 object-cover rounded-lg group-hover:scale-110 transition-transform duration-500">
                     </div>
                     <h3 class="text-2xl font-bold text-gray-900 mb-4">Organic Grains</h3>
                     <ul class="space-y-2 text-gray-700">
@@ -261,10 +270,12 @@
                     </ul>
                 </div>
 
-                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <div class="mb-6">
+                <div
+                    class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="mb-6 overflow-hidden rounded-lg">
                         <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=400&h=300&fit=crop&q=80"
-                            alt="Fresh Fruits" class="w-full h-48 object-cover rounded-lg mb-4">
+                            alt="Fresh Fruits"
+                            class="w-full h-48 object-cover rounded-lg group-hover:scale-110 transition-transform duration-500">
                     </div>
                     <h3 class="text-2xl font-bold text-gray-900 mb-4">Fresh Fruits</h3>
                     <ul class="space-y-2 text-gray-700">
@@ -287,10 +298,12 @@
                     </ul>
                 </div>
 
-                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <div class="mb-6">
+                <div
+                    class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="mb-6 overflow-hidden rounded-lg">
                         <img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?w=400&h=300&fit=crop&q=80"
-                            alt="Medicinal Plants" class="w-full h-48 object-cover rounded-lg mb-4">
+                            alt="Medicinal Plants"
+                            class="w-full h-48 object-cover rounded-lg group-hover:scale-110 transition-transform duration-500">
                     </div>
                     <h3 class="text-2xl font-bold text-gray-900 mb-4">Medicinal Plants & Herbs</h3>
                     <ul class="space-y-2 text-gray-700">
@@ -313,10 +326,12 @@
                     </ul>
                 </div>
 
-                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <div class="mb-6">
+                <div
+                    class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="mb-6 overflow-hidden rounded-lg">
                         <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=400&h=300&fit=crop&q=80"
-                            alt="Vegetables" class="w-full h-48 object-cover rounded-lg mb-4">
+                            alt="Vegetables"
+                            class="w-full h-48 object-cover rounded-lg group-hover:scale-110 transition-transform duration-500">
                     </div>
                     <h3 class="text-2xl font-bold text-gray-900 mb-4">Vegetables</h3>
                     <ul class="space-y-2 text-gray-700">
@@ -352,46 +367,19 @@
     <!-- SECTION 4: EXPORT DESTINATIONS -->
     <section class="py-20 bg-white reveal">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                    Reaching Markets Across Continents
-                </h2>
-                <p class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
-                    In just 2 years, we've established partnerships across four major regions.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-                <div class="text-center">
-                    <div
-                        class="w-24 h-24 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-4">
-                        <span class="text-3xl font-bold text-white">UAE</span>
-                    </div>
-                    <h4 class="font-bold text-gray-900">United Arab Emirates</h4>
+            <div class="flex flex-col-reverse md:flex-row items-center gap-12 mb-16">
+                <div class="w-full md:w-1/2">
+                    <img src="../assets/images/global-destinations.jpg" alt="Global Export Destinations"
+                        class="w-full h-auto rounded-2xl shadow-xl">
                 </div>
 
-                <div class="text-center">
-                    <div
-                        class="w-24 h-24 bg-gradient-to-br from-secondary to-tertiary rounded-full flex items-center justify-center mx-auto mb-4">
-                        <span class="text-3xl font-bold text-white">EU</span>
-                    </div>
-                    <h4 class="font-bold text-gray-900">European Union</h4>
-                </div>
-
-                <div class="text-center">
-                    <div
-                        class="w-24 h-24 bg-gradient-to-br from-tertiary to-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                        <span class="text-3xl font-bold text-white">USA</span>
-                    </div>
-                    <h4 class="font-bold text-gray-900">United States</h4>
-                </div>
-
-                <div class="text-center">
-                    <div
-                        class="w-24 h-24 bg-gradient-to-br from-primary to-tertiary rounded-full flex items-center justify-center mx-auto mb-4">
-                        <span class="text-3xl font-bold text-white">SEA</span>
-                    </div>
-                    <h4 class="font-bold text-gray-900">Southeast Asia</h4>
+                <div class="w-full md:w-1/2 text-left">
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                        Reaching Markets Across Continents
+                    </h2>
+                    <p class="text-lg sm:text-xl text-gray-600">
+                        In just 2 years, we've established partnerships across four major regions.
+                    </p>
                 </div>
             </div>
 
@@ -401,13 +389,13 @@
                     <div class="text-gray-700 font-medium">Years in Export</div>
                 </div>
 
-                <div class="text-center p-6 bg-gradient-to-br from-secondary/5 to-secondary/10 rounded-2xl">
-                    <div class="text-4xl md:text-5xl font-bold text-secondary mb-2">500+</div>
+                <div class="text-center p-6 bg-gradient-to-br from-primary/5 to-primary/10 rounded-2xl">
+                    <div class="text-4xl md:text-5xl font-bold text-primary mb-2">500+</div>
                     <div class="text-gray-700 font-medium">Tons Exported Annually</div>
                 </div>
 
-                <div class="text-center p-6 bg-gradient-to-br from-tertiary/5 to-tertiary/10 rounded-2xl">
-                    <div class="text-4xl md:text-5xl font-bold text-tertiary mb-2">25+</div>
+                <div class="text-center p-6 bg-gradient-to-br from-primary/5 to-primary/10 rounded-2xl">
+                    <div class="text-4xl md:text-5xl font-bold text-primary mb-2">25+</div>
                     <div class="text-gray-700 font-medium">Active Partners</div>
                 </div>
 
@@ -419,7 +407,7 @@
 
             <div class="text-center">
                 <a href="#get-started"
-                    class="btn-shimmer inline-block px-8 py-4 rounded-lg bg-fourth text-white font-bold hover:bg-black hover:text-white transition-all duration-300 shadow-md hover:shadow-lg border border-white/10">
+                    class="btn-shimmer inline-block px-8 py-4 rounded-lg bg-primary text-white font-bold hover:bg-black hover:text-white transition-all duration-300 shadow-md hover:shadow-lg border border-white/10">
                     Expand to Your Region
                 </a>
             </div>
@@ -438,95 +426,146 @@
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white rounded-2xl p-8 shadow-lg">
-                    <div class="flex items-center gap-4 mb-4">
-                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
-                            <span class="text-white font-bold text-xl">1</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900">Quality Harvest</h3>
-                    </div>
-                    <p class="text-gray-700 leading-relaxed">
-                        Only export-grade produce makes the cut. Our farmers harvest at peak freshness using organic
-                        methods.
-                    </p>
+            <div class="relative max-w-5xl mx-auto">
+                <!-- Timeline Vertical Line -->
+                <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-primary/20 -translate-x-1/2">
                 </div>
 
-                <div class="bg-white rounded-2xl p-8 shadow-lg">
-                    <div class="flex items-center gap-4 mb-4">
-                        <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
-                            <span class="text-white font-bold text-xl">2</span>
+                <!-- Step 1 -->
+                <div class="relative flex flex-col md:flex-row items-center justify-between mb-16 group">
+                    <!-- Left Side (Card) -->
+                    <div class="w-full md:w-[calc(50%-3rem)] mb-8 md:mb-0">
+                        <div
+                            class="bg-white rounded-2xl p-8 shadow-lg relative border-l-4 border-primary hover:-translate-y-2 transition-transform duration-300">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Quality Harvest</h3>
+                            <p class="text-gray-700">Only export-grade produce makes the cut. Our farmers harvest at
+                                peak freshness using organic methods.</p>
+                            <!-- Mobile Number (Visible only on small screens) -->
+                            <div
+                                class="md:hidden absolute -top-4 -right-4 w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold shadow-md">
+                                1</div>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-900">Rigorous Testing</h3>
                     </div>
-                    <p class="text-gray-700 leading-relaxed">
-                        Every batch undergoes quality checks for pesticides, heavy metals, and organic compliance. Zero
-                        tolerance for contamination.
-                    </p>
+                    <!-- Center Number (Visible on MD+) -->
+                    <div
+                        class="hidden md:flex absolute left-1/2 -translate-x-1/2 w-12 h-12 bg-primary text-white rounded-full items-center justify-center font-bold text-xl ring-4 ring-white shadow-lg z-10">
+                        1</div>
+                    <!-- Right Side (Spacer) -->
+                    <div class="w-full md:w-[calc(50%-3rem)]"></div>
                 </div>
 
-                <div class="bg-white rounded-2xl p-8 shadow-lg">
-                    <div class="flex items-center gap-4 mb-4">
-                        <div class="w-12 h-12 bg-tertiary rounded-full flex items-center justify-center flex-shrink-0">
-                            <span class="text-white font-bold text-xl">3</span>
+                <!-- Step 2 -->
+                <div class="relative flex flex-col md:flex-row-reverse items-center justify-between mb-16 group">
+                    <div class="w-full md:w-[calc(50%-3rem)] mb-8 md:mb-0">
+                        <div
+                            class="bg-white rounded-2xl p-8 shadow-lg relative border-r-4 md:border-r-4 md:border-l-0 border-l-4 border-secondary hover:-translate-y-2 transition-transform duration-300 md:text-right">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Rigorous Testing</h3>
+                            <p class="text-gray-700">Every batch undergoes quality checks for pesticides, heavy metals,
+                                and organic compliance. Zero tolerance for contamination.</p>
+                            <div
+                                class="md:hidden absolute -top-4 -right-4 w-10 h-10 bg-secondary text-white rounded-full flex items-center justify-center font-bold shadow-md">
+                                2</div>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-900">Professional Grading</h3>
                     </div>
-                    <p class="text-gray-700 leading-relaxed">
-                        Products are sorted, graded, and categorized based on international standards and your
-                        specifications.
-                    </p>
+                    <div
+                        class="hidden md:flex absolute left-1/2 -translate-x-1/2 w-12 h-12 bg-secondary text-white rounded-full items-center justify-center font-bold text-xl ring-4 ring-white shadow-lg z-10">
+                        2</div>
+                    <div class="w-full md:w-[calc(50%-3rem)]"></div>
                 </div>
 
-                <div class="bg-white rounded-2xl p-8 shadow-lg">
-                    <div class="flex items-center gap-4 mb-4">
-                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
-                            <span class="text-white font-bold text-xl">4</span>
+                <!-- Step 3 -->
+                <div class="relative flex flex-col md:flex-row items-center justify-between mb-16 group">
+                    <div class="w-full md:w-[calc(50%-3rem)] mb-8 md:mb-0">
+                        <div
+                            class="bg-white rounded-2xl p-8 shadow-lg relative border-l-4 border-tertiary hover:-translate-y-2 transition-transform duration-300">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Professional Grading</h3>
+                            <p class="text-gray-700">Products are sorted, graded, and categorized based on international
+                                standards and your specifications.</p>
+                            <div
+                                class="md:hidden absolute -top-4 -right-4 w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold shadow-md">
+                                3</div>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-900">Hygienic Packaging</h3>
                     </div>
-                    <p class="text-gray-700 leading-relaxed">
-                        Food-safe, eco-friendly packaging that preserves freshness and meets international shipping
-                        regulations.
-                    </p>
+                    <div
+                        class="hidden md:flex absolute left-1/2 -translate-x-1/2 w-12 h-12 bg-primary text-white rounded-full items-center justify-center font-bold text-xl ring-4 ring-white shadow-lg z-10">
+                        3</div>
+                    <div class="w-full md:w-[calc(50%-3rem)]"></div>
                 </div>
 
-                <div class="bg-white rounded-2xl p-8 shadow-lg">
-                    <div class="flex items-center gap-4 mb-4">
-                        <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
-                            <span class="text-white font-bold text-xl">5</span>
+                <!-- Step 4 -->
+                <div class="relative flex flex-col md:flex-row-reverse items-center justify-between mb-16 group">
+                    <div class="w-full md:w-[calc(50%-3rem)] mb-8 md:mb-0">
+                        <div
+                            class="bg-white rounded-2xl p-8 shadow-lg relative border-r-4 md:border-r-4 md:border-l-0 border-l-4 border-primary hover:-translate-y-2 transition-transform duration-300 md:text-right">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Hygienic Packaging</h3>
+                            <p class="text-gray-700">Food-safe, eco-friendly packaging that preserves freshness and
+                                meets international shipping regulations.</p>
+                            <div
+                                class="md:hidden absolute -top-4 -right-4 w-10 h-10 bg-secondary text-white rounded-full flex items-center justify-center font-bold shadow-md">
+                                4</div>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-900">Documentation & Compliance</h3>
                     </div>
-                    <p class="text-gray-700 leading-relaxed">
-                        We handle all export paperwork, phytosanitary certificates, and customs documentation required
-                        for your destination.
-                    </p>
+                    <div
+                        class="hidden md:flex absolute left-1/2 -translate-x-1/2 w-12 h-12 bg-secondary text-white rounded-full items-center justify-center font-bold text-xl ring-4 ring-white shadow-lg z-10">
+                        4</div>
+                    <div class="w-full md:w-[calc(50%-3rem)]"></div>
                 </div>
 
-                <div class="bg-white rounded-2xl p-8 shadow-lg">
-                    <div class="flex items-center gap-4 mb-4">
-                        <div class="w-12 h-12 bg-tertiary rounded-full flex items-center justify-center flex-shrink-0">
-                            <span class="text-white font-bold text-xl">6</span>
+                <!-- Step 5 -->
+                <div class="relative flex flex-col md:flex-row items-center justify-between mb-16 group">
+                    <div class="w-full md:w-[calc(50%-3rem)] mb-8 md:mb-0">
+                        <div
+                            class="bg-white rounded-2xl p-8 shadow-lg relative border-l-4 border-secondary hover:-translate-y-2 transition-transform duration-300">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Documentation & Compliance</h3>
+                            <p class="text-gray-700">We handle all export paperwork, phytosanitary certificates, and
+                                customs documentation required for your destination.</p>
+                            <div
+                                class="md:hidden absolute -top-4 -right-4 w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold shadow-md">
+                                5</div>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-900">Efficient Logistics</h3>
                     </div>
-                    <p class="text-gray-700 leading-relaxed">
-                        Temperature-controlled transportation and partnerships with reliable freight forwarders ensure
-                        timely delivery.
-                    </p>
+                    <div
+                        class="hidden md:flex absolute left-1/2 -translate-x-1/2 w-12 h-12 bg-primary text-white rounded-full items-center justify-center font-bold text-xl ring-4 ring-white shadow-lg z-10">
+                        5</div>
+                    <div class="w-full md:w-[calc(50%-3rem)]"></div>
                 </div>
 
-                <div class="bg-white rounded-2xl p-8 shadow-lg md:col-span-2 lg:col-span-1">
-                    <div class="flex items-center gap-4 mb-4">
-                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
-                            <span class="text-white font-bold text-xl">7</span>
+                <!-- Step 6 -->
+                <div class="relative flex flex-col md:flex-row-reverse items-center justify-between mb-16 group">
+                    <div class="w-full md:w-[calc(50%-3rem)] mb-8 md:mb-0">
+                        <div
+                            class="bg-white rounded-2xl p-8 shadow-lg relative border-r-4 md:border-r-4 md:border-l-0 border-l-4 border-tertiary hover:-translate-y-2 transition-transform duration-300 md:text-right">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Efficient Logistics</h3>
+                            <p class="text-gray-700">Temperature-controlled transportation and partnerships with
+                                reliable freight forwarders ensure timely delivery.</p>
+                            <div
+                                class="md:hidden absolute -top-4 -right-4 w-10 h-10 bg-secondary text-white rounded-full flex items-center justify-center font-bold shadow-md">
+                                6</div>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-900">Delivery & Support</h3>
                     </div>
-                    <p class="text-gray-700 leading-relaxed">
-                        Track your shipment in real-time. Our team stays in touch until your order arrives safely.
-                    </p>
+                    <div
+                        class="hidden md:flex absolute left-1/2 -translate-x-1/2 w-12 h-12 bg-secondary text-white rounded-full items-center justify-center font-bold text-xl ring-4 ring-white shadow-lg z-10">
+                        6</div>
+                    <div class="w-full md:w-[calc(50%-3rem)]"></div>
+                </div>
+
+                <!-- Step 7 -->
+                <div class="relative flex flex-col md:flex-row items-center justify-between group">
+                    <div class="w-full md:w-[calc(50%-3rem)] mb-8 md:mb-0">
+                        <div
+                            class="bg-white rounded-2xl p-8 shadow-lg relative border-l-4 border-primary hover:-translate-y-2 transition-transform duration-300">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Delivery & Support</h3>
+                            <p class="text-gray-700">Track your shipment in real-time. Our team stays in touch until
+                                your order arrives safely.</p>
+                            <div
+                                class="md:hidden absolute -top-4 -right-4 w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold shadow-md">
+                                7</div>
+                        </div>
+                    </div>
+                    <div
+                        class="hidden md:flex absolute left-1/2 -translate-x-1/2 w-12 h-12 bg-primary text-white rounded-full items-center justify-center font-bold text-xl ring-4 ring-white shadow-lg z-10">
+                        7</div>
+                    <div class="w-full md:w-[calc(50%-3rem)]"></div>
                 </div>
             </div>
         </div>
@@ -552,16 +591,14 @@
                     </p>
                 </div>
 
-                <div
-                    class="bg-gradient-to-br from-secondary/5 to-secondary/10 rounded-2xl p-8 border-l-4 border-secondary">
+                <div class="bg-gradient-to-br from-primary/5 to-primary/10 rounded-2xl p-8 border-l-4 border-primary">
                     <h3 class="text-xl font-bold text-gray-900 mb-3">During Cultivation</h3>
                     <p class="text-gray-700 leading-relaxed">
                         Regular monitoring by agronomists. Organic protocols followed strictly with documented records.
                     </p>
                 </div>
 
-                <div
-                    class="bg-gradient-to-br from-tertiary/5 to-tertiary/10 rounded-2xl p-8 border-l-4 border-tertiary">
+                <div class="bg-gradient-to-br from-primary/5 to-primary/10 rounded-2xl p-8 border-l-4 border-primary">
                     <h3 class="text-xl font-bold text-gray-900 mb-3">Post-Harvest Inspection</h3>
                     <p class="text-gray-700 leading-relaxed">
                         Visual inspection, size grading, and damage assessment before processing.
@@ -576,16 +613,14 @@
                     </p>
                 </div>
 
-                <div
-                    class="bg-gradient-to-br from-secondary/5 to-secondary/10 rounded-2xl p-8 border-l-4 border-secondary">
+                <div class="bg-gradient-to-br from-primary/5 to-primary/10 rounded-2xl p-8 border-l-4 border-primary">
                     <h3 class="text-xl font-bold text-gray-900 mb-3">Cold Chain Management</h3>
                     <p class="text-gray-700 leading-relaxed">
                         Temperature logs maintained throughout storage and transport to preserve freshness.
                     </p>
                 </div>
 
-                <div
-                    class="bg-gradient-to-br from-tertiary/5 to-tertiary/10 rounded-2xl p-8 border-l-4 border-tertiary">
+                <div class="bg-gradient-to-br from-primary/5 to-primary/10 rounded-2xl p-8 border-l-4 border-primary">
                     <h3 class="text-xl font-bold text-gray-900 mb-3">Traceability Documentation</h3>
                     <p class="text-gray-700 leading-relaxed">
                         Every batch comes with complete farm-to-export documentation including farmer details, harvest
@@ -599,26 +634,34 @@
     <!-- SECTION 7: FOR INTERNATIONAL BUYERS -->
     <section class="py-20 bg-light-yellow reveal">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                    Partnership Built on Trust, Delivered with Excellence
-                </h2>
-                <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
-                    Whether you're a distributor, retailer, or food manufacturer, we make importing Indian organic
-                    produce simple and reliable.
-                </p>
+            <div class="flex flex-col md:flex-row items-center gap-12 mb-16">
+                <!-- Text Column -->
+                <div class="w-full md:w-1/2 text-center md:text-left">
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-tertiary mb-4">
+                        Partnership Built on Trust, Delivered with Excellence
+                    </h2>
+                    <p class="text-lg sm:text-xl text-gray-600">
+                        Whether you're a distributor, retailer, or food manufacturer, we make importing Indian organic
+                        produce simple and reliable.
+                    </p>
+                </div>
+                <!-- Image Column -->
+                <div class="w-full md:w-1/2 flex justify-center md:justify-end">
+                    <img src="../assets/images/export-trust.png" alt="Trust and Excellence"
+                        class="h-32 md:h-48 object-contain">
+                </div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
                 <div class="bg-white rounded-2xl p-8 shadow-lg">
-                    <h3 class="text-2xl font-bold text-primary mb-4">Flexible Order Volumes</h3>
+                    <h3 class="text-2xl font-bold text-tertiary mb-4">Flexible Order Volumes</h3>
                     <p class="text-gray-700 leading-relaxed">
                         From container loads to trial shipments—we accommodate orders of all sizes as you scale.
                     </p>
                 </div>
 
                 <div class="bg-white rounded-2xl p-8 shadow-lg">
-                    <h3 class="text-2xl font-bold text-secondary mb-4">Custom Specifications</h3>
+                    <h3 class="text-2xl font-bold text-tertiary mb-4">Custom Specifications</h3>
                     <p class="text-gray-700 leading-relaxed">
                         Need specific grading, packaging, or labeling? We tailor shipments to your market requirements.
                     </p>
@@ -632,14 +675,14 @@
                 </div>
 
                 <div class="bg-white rounded-2xl p-8 shadow-lg">
-                    <h3 class="text-2xl font-bold text-primary mb-4">Competitive Pricing</h3>
+                    <h3 class="text-2xl font-bold text-tertiary mb-4">Competitive Pricing</h3>
                     <p class="text-gray-700 leading-relaxed">
                         Direct sourcing from farms means better margins for you without compromising on quality.
                     </p>
                 </div>
 
                 <div class="bg-white rounded-2xl p-8 shadow-lg">
-                    <h3 class="text-2xl font-bold text-secondary mb-4">Reliable Communication</h3>
+                    <h3 class="text-2xl font-bold text-tertiary mb-4">Reliable Communication</h3>
                     <p class="text-gray-700 leading-relaxed">
                         Dedicated account manager for each partner. Questions answered promptly, issues resolved
                         quickly.
@@ -697,12 +740,12 @@
 
                 <!-- Q2 -->
                 <details name="faq"
-                    class="group bg-light-yellow rounded-2xl border-l-4 border-secondary overflow-hidden transition-all duration-300 hover:shadow-md">
+                    class="group bg-light-yellow rounded-2xl border-l-4 border-primary  overflow-hidden transition-all duration-300 hover:shadow-md">
                     <summary
                         class="flex items-center justify-between p-6 cursor-pointer list-none select-none outline-none">
                         <h3 class="text-lg font-bold text-gray-900 pr-8">Q2: What is the minimum order quantity for
                             exports?</h3>
-                        <svg class="w-6 h-6 text-secondary transform transition-transform duration-300 group-open:rotate-180 flex-shrink-0"
+                        <svg class="w-6 h-6 text-primary transform transition-transform duration-300 group-open:rotate-180 flex-shrink-0"
                             fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
                             </path>
@@ -717,11 +760,11 @@
 
                 <!-- Q3 -->
                 <details name="faq"
-                    class="group bg-light-yellow rounded-2xl border-l-4 border-tertiary overflow-hidden transition-all duration-300 hover:shadow-md">
+                    class="group bg-light-yellow rounded-2xl border-l-4 border-primary overflow-hidden transition-all duration-300 hover:shadow-md">
                     <summary
                         class="flex items-center justify-between p-6 cursor-pointer list-none select-none outline-none">
                         <h3 class="text-lg font-bold text-gray-900 pr-8">Q3: How long does shipping take?</h3>
-                        <svg class="w-6 h-6 text-tertiary transform transition-transform duration-300 group-open:rotate-180 flex-shrink-0"
+                        <svg class="w-6 h-6 text-primary transform transition-transform duration-300 group-open:rotate-180 flex-shrink-0"
                             fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
                             </path>
@@ -754,12 +797,12 @@
 
                 <!-- Q5 -->
                 <details name="faq"
-                    class="group bg-light-yellow rounded-2xl border-l-4 border-secondary overflow-hidden transition-all duration-300 hover:shadow-md">
+                    class="group bg-light-yellow rounded-2xl border-l-4 border-primary overflow-hidden transition-all duration-300 hover:shadow-md">
                     <summary
                         class="flex items-center justify-between p-6 cursor-pointer list-none select-none outline-none">
                         <h3 class="text-lg font-bold text-gray-900 pr-8">Q5: How do you ensure consistent supply
                             throughout the year?</h3>
-                        <svg class="w-6 h-6 text-secondary transform transition-transform duration-300 group-open:rotate-180 flex-shrink-0"
+                        <svg class="w-6 h-6 text-primary transform transition-transform duration-300 group-open:rotate-180 flex-shrink-0"
                             fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
                             </path>
@@ -774,11 +817,11 @@
 
                 <!-- Q6 -->
                 <details name="faq"
-                    class="group bg-light-yellow rounded-2xl border-l-4 border-tertiary overflow-hidden transition-all duration-300 hover:shadow-md">
+                    class="group bg-light-yellow rounded-2xl border-l-4 border-primary overflow-hidden transition-all duration-300 hover:shadow-md">
                     <summary
                         class="flex items-center justify-between p-6 cursor-pointer list-none select-none outline-none">
                         <h3 class="text-lg font-bold text-gray-900 pr-8">Q6: What payment terms do you offer?</h3>
-                        <svg class="w-6 h-6 text-tertiary transform transition-transform duration-300 group-open:rotate-180 flex-shrink-0"
+                        <svg class="w-6 h-6 text-primary transform transition-transform duration-300 group-open:rotate-180 flex-shrink-0"
                             fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
                             </path>
@@ -812,12 +855,12 @@
 
                 <!-- Q8 -->
                 <details name="faq"
-                    class="group bg-light-yellow rounded-2xl border-l-4 border-secondary overflow-hidden transition-all duration-300 hover:shadow-md">
+                    class="group bg-light-yellow rounded-2xl border-l-4 border-primary overflow-hidden transition-all duration-300 hover:shadow-md">
                     <summary
                         class="flex items-center justify-between p-6 cursor-pointer list-none select-none outline-none">
                         <h3 class="text-lg font-bold text-gray-900 pr-8">Q8: What if there's a quality issue with my
                             shipment?</h3>
-                        <svg class="w-6 h-6 text-secondary transform transition-transform duration-300 group-open:rotate-180 flex-shrink-0"
+                        <svg class="w-6 h-6 text-primary transform transition-transform duration-300 group-open:rotate-180 flex-shrink-0"
                             fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
                             </path>
@@ -832,12 +875,12 @@
 
                 <!-- Q9 -->
                 <details name="faq"
-                    class="group bg-light-yellow rounded-2xl border-l-4 border-tertiary overflow-hidden transition-all duration-300 hover:shadow-md">
+                    class="group bg-light-yellow rounded-2xl border-l-4 border-primary overflow-hidden transition-all duration-300 hover:shadow-md">
                     <summary
                         class="flex items-center justify-between p-6 cursor-pointer list-none select-none outline-none">
                         <h3 class="text-lg font-bold text-gray-900 pr-8">Q9: Can I visit the farms where my produce is
                             grown?</h3>
-                        <svg class="w-6 h-6 text-tertiary transform transition-transform duration-300 group-open:rotate-180 flex-shrink-0"
+                        <svg class="w-6 h-6 text-primary transform transition-transform duration-300 group-open:rotate-180 flex-shrink-0"
                             fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
                             </path>
@@ -872,50 +915,36 @@
         </div>
     </section>
 
-    <!-- SECTION 9: GET STARTED -->
-    <section id="get-started"
-        class="py-20 bg-gradient-to-br from-primary via-secondary to-tertiary relative overflow-hidden reveal">
+    <!-- SECTION 9: NEWSLETTER SIGNUP -->
+    <section class="py-20 bg-gradient-to-br from-primary to-secondary relative overflow-hidden reveal">
+        <!-- Decorative elements -->
         <div class="absolute inset-0 opacity-10">
-            <div class="absolute top-10 left-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+            <div class="absolute top-10 left-10 w-64 h-64 bg-white rounded-full blur-3xl"></div>
             <div class="absolute bottom-10 right-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
         </div>
 
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">
-                Ready to Import Premium Organic Produce from India?
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
+                Stay Connected with Agrisethu
             </h2>
-            <p class="text-lg sm:text-xl text-white/90 max-w-3xl mx-auto mb-12 leading-relaxed">
-                Partner with Agrisethu and bring authentic, traceable, organic products to your market.
+            <p class="text-lg sm:text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+                Get insights on organic farming trends, market forecasts, and sustainable agriculture delivered to your
+                inbox.
             </p>
 
-            <div class="flex flex-wrap justify-center gap-4 mb-12">
-                <a href="/pages/contact.html"
-                    class="btn-shimmer inline-block px-10 py-5 rounded-lg bg-white text-primary font-bold text-lg hover:bg-light-yellow transition-all duration-300 shadow-xl hover:shadow-2xl">
-                    Contact Our Export Team
-                </a>
-                <a href="#"
-                    class="btn-shimmer inline-block px-10 py-5 rounded-lg bg-white/10 backdrop-blur-sm text-white font-bold text-lg hover:bg-white hover:text-primary border-2 border-white transition-all duration-300 shadow-xl hover:shadow-2xl">
-                    Download Product Catalog
-                </a>
-            </div>
-
-            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-                <h3 class="text-2xl font-bold text-white mb-6">Quick Contact</h3>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-white">
-                    <div>
-                        <div class="text-sm text-white/70 mb-1">Email</div>
-                        <div class="font-bold">exports@agrisethu.com</div>
-                    </div>
-                    <div>
-                        <div class="text-sm text-white/70 mb-1">Phone</div>
-                        <div class="font-bold">+91 XXX XXX XXXX</div>
-                    </div>
-                    <div>
-                        <div class="text-sm text-white/70 mb-1">WhatsApp</div>
-                        <div class="font-bold">+91 XXX XXX XXXX</div>
-                    </div>
+            <form class="max-w-xl mx-auto" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <input type="email" required placeholder="Enter your email address"
+                        class="flex-1 px-6 py-4 rounded-lg text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-4 focus:ring-white/30 transition-all duration-300 shadow-lg">
+                    <button type="submit"
+                        class="btn-shimmer px-8 py-4 rounded-lg bg-fourth text-white font-bold hover:bg-black transition-all duration-300 shadow-lg hover:shadow-xl whitespace-nowrap">
+                        Subscribe Now
+                    </button>
                 </div>
-            </div>
+                <p class="text-sm text-white/70 mt-4">
+                    We respect your privacy. Unsubscribe anytime.
+                </p>
+            </form>
         </div>
     </section>
 
@@ -946,7 +975,8 @@
                 <div>
                     <h3 class="text-white text-xl font-bold mb-4">Our Services</h3>
                     <ul class="space-y-3">
-                        <li><a href="#" class="hover:text-primary transition-colors duration-300">Farmer Employment</a>
+                        <li><a href="/pages/farmer-employment.html"
+                                class="hover:text-primary transition-colors duration-300">Farmer Employment</a>
                         </li>
                         <li><a href="#" class="hover:text-primary transition-colors duration-300">Land Leasing</a></li>
                         <li><a href="#" class="hover:text-primary transition-colors duration-300">Organic Farming</a>

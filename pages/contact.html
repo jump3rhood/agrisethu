@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;500;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <!-- Typed.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <style>
         html {
             scroll-behavior: smooth;
@@ -53,10 +56,10 @@
                             <a href="/index.html#services"
                                 class="block px-6 py-3 text-sm text-gray-600 hover:bg-light-yellow hover:text-primary transition-colors">For
                                 Landowners</a>
-                            <a href="/index.html#services"
+                            <a href="/pages/farmer-employment.html"
                                 class="block px-6 py-3 text-sm text-gray-600 hover:bg-light-yellow hover:text-primary transition-colors">For
                                 Farmers</a>
-                            <a href="/index.html#services"
+                            <a href="/pages/animal-husbandry.html"
                                 class="block px-6 py-3 text-sm text-gray-600 hover:bg-light-yellow hover:text-primary transition-colors">Animal
                                 Husbandry</a>
                             <a href="/pages/exports.html"
@@ -64,9 +67,6 @@
                                 Exports</a>
                         </div>
                     </div>
-
-                    <a href="/pages/contact.html"
-                        class="text-primary font-bold transition-colors duration-300">Contact</a>
 
                     <a href="/pages/contact.html#contact-form"
                         class="btn-shimmer px-6 py-2.5 rounded-lg bg-primary text-white font-bold hover:bg-dark-brown transition-all duration-300 shadow-md hover:shadow-lg">Contact</a>
@@ -100,9 +100,9 @@
                     <div class="pl-4 space-y-2 border-l-2 border-gray-100">
                         <a href="/index.html#services"
                             class="block text-sm font-medium text-gray-600 hover:text-primary">For Landowners</a>
-                        <a href="/index.html#services"
+                        <a href="/pages/farmer-employment.html"
                             class="block text-sm font-medium text-gray-600 hover:text-primary">For Farmers</a>
-                        <a href="/index.html#services"
+                        <a href="/pages/animal-husbandry.html"
                             class="block text-sm font-medium text-gray-600 hover:text-primary">Animal Husbandry</a>
                         <a href="/pages/exports.html"
                             class="block text-sm font-medium text-gray-600 hover:text-primary">Global
@@ -117,21 +117,32 @@
     </nav>
 
     <!-- SECTION 1: HERO SECTION -->
-    <section
-        class="relative min-h-[60vh] flex items-center justify-center bg-gradient-to-br from-primary to-secondary overflow-hidden pt-20 reveal">
+    <section class="relative min-h-[60vh] flex items-center justify-center bg-black overflow-hidden pt-20 reveal">
+        <!-- Hero Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="../assets/images/contact-hero-image.jpg" alt="Contact Hero"
+                class="w-full h-full object-cover opacity-60">
+        </div>
+
         <div class="absolute inset-0 opacity-10">
             <div class="absolute top-10 left-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
             <div class="absolute bottom-10 right-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
         </div>
 
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 py-20">
-            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6">
-                Get In Touch With Us
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 min-h-[1.2em]">
+                <span class="typing-text" data-strings='["Get In Touch With Us"]'></span>
             </h1>
-            <p class="text-lg sm:text-xl text-white/90 max-w-2xl mx-auto leading-relaxed">
+            <p class="text-lg sm:text-xl text-white/90 max-w-2xl mx-auto leading-relaxed mb-10 text-shadow-md">
                 Have questions about our services? Want to partner with us? We're here to help you transform Indian
                 agriculture.
             </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#contactForm"
+                    class="btn-shimmer inline-block px-6 sm:px-8 py-3 sm:py-4 rounded-lg bg-primary text-white font-bold hover:bg-dark-brown transition-all duration-300 shadow-md hover:shadow-lg text-center text-sm sm:text-base text-lg">
+                    Get in touch with us
+                </a>
+            </div>
         </div>
     </section>
 
@@ -168,7 +179,7 @@
                 <!-- Email Card -->
                 <div
                     class="bg-gradient-to-br from-secondary/5 to-secondary/10 rounded-2xl p-8 text-center border border-secondary/20 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-6">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
@@ -178,13 +189,13 @@
                     <h3 class="text-xl font-bold text-gray-900 mb-3">Email Us</h3>
                     <p class="text-gray-600 mb-4">We'll respond within 24 hours</p>
                     <a href="mailto:info@agrisethu.com"
-                        class="text-secondary font-bold text-lg hover:text-primary transition-colors">info@agrisethu.com</a>
+                        class="text-primary font-bold text-lg hover:text-secondary transition-colors">info@agrisethu.com</a>
                 </div>
 
                 <!-- Location Card -->
                 <div
                     class="bg-gradient-to-br from-tertiary/5 to-tertiary/10 rounded-2xl p-8 text-center border border-tertiary/20 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-                    <div class="w-16 h-16 bg-tertiary rounded-full flex items-center justify-center mx-auto mb-6">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
@@ -282,22 +293,10 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <!-- Map Placeholder -->
-                <div class="bg-gray-200 rounded-2xl overflow-hidden shadow-xl h-96">
-                    <div
-                        class="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary/10 to-secondary/10">
-                        <div class="text-center">
-                            <svg class="w-16 h-16 text-primary mx-auto mb-4" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
-                                </path>
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                            </svg>
-                            <p class="text-gray-600 font-medium">Map Location</p>
-                            <p class="text-sm text-gray-500 mt-2">Agrisethu Office</p>
-                        </div>
-                    </div>
+                <!-- Map Placeholder / Image -->
+                <div class="hidden lg:block rounded-2xl overflow-hidden shadow-xl h-96">
+                    <img src="../assets/images/why-choose-image.jpg" alt="Why Choose Agrisethu"
+                        class="w-full h-full object-cover">
                 </div>
 
                 <!-- Additional Information -->
@@ -412,12 +411,18 @@
                 <div>
                     <h3 class="text-white text-xl font-bold mb-4">Quick Links</h3>
                     <ul class="space-y-3">
-                        <li><a href="/index.html" class="hover:text-primary transition-colors duration-300">Home</a>
+                        <li><a href="/" class="hover:text-primary transition-colors duration-300">Home</a></li>
+                        <li><a href="/pages/story.html" class="hover:text-primary transition-colors duration-300">Our
+                                Story</a></li>
+                        <li><a href="#services" class="hover:text-primary transition-colors duration-300">Services</a>
                         </li>
-                        <li><a href="/index.html#services"
-                                class="hover:text-primary transition-colors duration-300">Services</a></li>
-                        <li><a href="/contact.html"
-                                class="hover:text-primary transition-colors duration-300">Contact</a></li>
+                        <li><a href="/pages/contact.html"
+                                class="hover:text-primary transition-colors duration-300">Contact</a>
+                        </li>
+                        <li><a href="#" class="hover:text-primary transition-colors duration-300">Careers</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors duration-300">Blog/Knowledge Hub</a>
+                        </li>
+                        <li><a href="#" class="hover:text-primary transition-colors duration-300">FAQ</a></li>
                     </ul>
                 </div>
 
@@ -425,7 +430,8 @@
                 <div>
                     <h3 class="text-white text-xl font-bold mb-4">Our Services</h3>
                     <ul class="space-y-3">
-                        <li><a href="#" class="hover:text-primary transition-colors duration-300">Farmer Employment</a>
+                        <li><a href="/pages/farmer-employment.html"
+                                class="hover:text-primary transition-colors duration-300">Farmer Employment</a>
                         </li>
                         <li><a href="#" class="hover:text-primary transition-colors duration-300">Land Leasing</a></li>
                         <li><a href="#" class="hover:text-primary transition-colors duration-300">Organic Farming</a>
@@ -434,6 +440,9 @@
                         </li>
                         <li><a href="#" class="hover:text-primary transition-colors duration-300">Global Exports</a>
                         </li>
+                        <li><a href="#" class="hover:text-primary transition-colors duration-300">Crop Advisory</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors duration-300">Insurance
+                                Assistance</a></li>
                     </ul>
                 </div>
 
@@ -441,6 +450,22 @@
                 <div>
                     <h3 class="text-white text-xl font-bold mb-4">Get In Touch</h3>
                     <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-primary mt-1 flex-shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                </path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <div>
+                                <p class="text-gray-400">Agrisethu Office Address</p>
+                                <p class="text-gray-400">City, State, PIN Code</p>
+                                <p class="text-gray-400">India</p>
+                            </div>
+                        </div>
+
                         <div class="flex items-center gap-3">
                             <svg class="w-5 h-5 text-primary flex-shrink-0" fill="none" stroke="currentColor"
                                 viewBox="0 0 24 24">
@@ -460,6 +485,12 @@
                             </svg>
                             <p class="text-gray-400">info@agrisethu.com</p>
                         </div>
+
+                        <div class="pt-2 border-t border-gray-800">
+                            <p class="text-sm font-bold text-white mb-2">Business Hours</p>
+                            <p class="text-sm text-gray-400">Mon - Sat: 9:00 AM - 6:00 PM</p>
+                            <p class="text-sm text-gray-400">Sunday: Closed</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -475,6 +506,10 @@
                             Policy</a>
                         <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">Terms &
                             Conditions</a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">Cookie
+                            Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">Refund
+                            Policy</a>
                     </div>
                 </div>
             </div>
