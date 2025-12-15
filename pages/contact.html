@@ -226,6 +226,118 @@
                     </p>
                 </div>
 
+                <form id="contactForm" class="space-y-6" novalidate>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Full Name Field -->
+                        <div>
+                            <label for="name" class="block text-sm font-bold text-gray-700 mb-2">Full Name *</label>
+                            <input type="text" id="name" name="name" required minlength="2" maxlength="50"
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
+                                placeholder="John Doe">
+                            <p class="hidden text-red-600 text-sm mt-1 error-message" id="name-error">
+                                <span class="inline-block mr-1">⚠</span>
+                                <span class="error-text"></span>
+                            </p>
+                        </div>
+
+                        <!-- Email Field -->
+                        <div>
+                            <label for="email" class="block text-sm font-bold text-gray-700 mb-2">Email Address
+                                *</label>
+                            <input type="email" id="email" name="email" required
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
+                                placeholder="john@example.com">
+                            <p class="hidden text-red-600 text-sm mt-1 error-message" id="email-error">
+                                <span class="inline-block mr-1">⚠</span>
+                                <span class="error-text"></span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Phone Number Field -->
+                        <div>
+                            <label for="phone" class="block text-sm font-bold text-gray-700 mb-2">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" pattern="[0-9+\s\-()]+" minlength="10"
+                                maxlength="15"
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
+                                placeholder="+91 XXX XXX XXXX">
+                            <p class="hidden text-red-600 text-sm mt-1 error-message" id="phone-error">
+                                <span class="inline-block mr-1">⚠</span>
+                                <span class="error-text"></span>
+                            </p>
+                        </div>
+
+                        <!-- Subject Field -->
+                        <div>
+                            <label for="subject" class="block text-sm font-bold text-gray-700 mb-2">Subject *</label>
+                            <select id="subject" name="subject" required
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all bg-white">
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="land">Land Leasing</option>
+                                <option value="farmer">Farmer Employment</option>
+                                <option value="export">Export Partnership</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <p class="hidden text-red-600 text-sm mt-1 error-message" id="subject-error">
+                                <span class="inline-block mr-1">⚠</span>
+                                <span class="error-text"></span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Message Field -->
+                    <div>
+                        <label for="message" class="block text-sm font-bold text-gray-700 mb-2">Your Message *</label>
+                        <textarea id="message" name="message" required rows="6" minlength="10" maxlength="1000"
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all resize-none"
+                            placeholder="Tell us about your inquiry..."></textarea>
+                        <div class="flex justify-between items-center mt-1">
+                            <p class="hidden text-red-600 text-sm error-message" id="message-error">
+                                <span class="inline-block mr-1">⚠</span>
+                                <span class="error-text"></span>
+                            </p>
+                            <p class="text-gray-500 text-sm ml-auto" id="message-counter">0 / 1000</p>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit"
+                        class="btn-shimmer w-full px-8 py-4 rounded-lg bg-primary text-white font-bold hover:bg-dark-brown transition-all duration-300 shadow-lg hover:shadow-xl text-lg disabled:opacity-50 disabled:cursor-not-allowed">
+                        Send Message
+                    </button>
+
+                    <!-- Success Message -->
+                    <div id="successMessage"
+                        class="hidden p-6 bg-green-50 border-2 border-green-200 rounded-lg animate-fadeIn">
+                        <p class="text-green-800 font-bold text-center text-lg">✓ Thank you! We'll get back to you
+                            within 24 hours.</p>
+                    </div>
+
+                    <!-- Error Message -->
+                    <div id="errorMessage"
+                        class="hidden p-6 bg-red-50 border-2 border-red-200 rounded-lg animate-fadeIn">
+                        <p class="text-red-800 font-bold text-center text-lg">⚠ Please correct the errors above and try
+                            again.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="contact-form" class="py-20 bg-light-brown reveal">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-2xl shadow-2xl p-8 md:p-12">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+                        Send Us a Message
+                    </h2>
+                    <p class="text-lg text-gray-600">
+                        Fill out the form below and we'll get back to you as soon as possible.
+                    </p>
+                </div>
+
                 <form id="contactForm" class="space-y-6"
                     onsubmit="event.preventDefault(); document.getElementById('successMessage').classList.remove('hidden'); setTimeout(() => { document.getElementById('successMessage').classList.add('hidden'); document.getElementById('contactForm').reset(); }, 5000);">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -286,7 +398,7 @@
                 </form>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- SECTION 4: MAP & ADDITIONAL INFO -->
     <section class="py-20 bg-white reveal">
